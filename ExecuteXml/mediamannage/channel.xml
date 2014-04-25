@@ -1,0 +1,22 @@
+<suite name="ipinyou" verbose="2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "channelname" value = "autochannel"/>
+<parameter name = "contacts" value = "autotester"/>
+<parameter name = "email" value = "autotest@ipinyou.com"/>
+<parameter name = "phonenum" value = "13800138000"/>
+
+<parameter name = "browser" value = "firefox" />
+
+    <test name="channel function" preserve-order="true">  
+        <classes>
+            <class name="com.ipinyou.testcase.mediamannage.Channel">
+                <methods>
+                    <include name="login" />     
+                    <include name="switchmedia" /> 
+                     <include name="createwebsuit" /> 
+                </methods>
+            </class>  
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,24 @@
+<suite name = "test" verbose = "2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "channel" value = "autochannel"/>
+<parameter name = "websuit" value = "autowebsite"/>
+<parameter name = "websuit" value = "autowebsite"/>
+<parameter name = "part" value = "autopart"/>
+<parameter name = "filepath" value = "D:\\testwebsite\\web1.html"/>
+<parameter name = "position" value = "autoadposition" />
+
+<parameter name = "browser" value = "chrome" />
+
+
+<test name = "downscript function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.ownmedia.DownScript">
+ <methods>
+                    <include name="login" />   
+                    <include name="downscript"/>                     
+</methods>
+</class>
+</classes>
+</test>
+</suite>

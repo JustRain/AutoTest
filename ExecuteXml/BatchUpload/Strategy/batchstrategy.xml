@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "orname" value = "AutoOrder"/>
+<parameter name = "plname" value = "AutoPlan"/>
+<parameter name = "batchstrategyname" value = "BatchStrategyDsp"/>
+<parameter name = "browser" value = "firefox" />
+
+
+  <test name="batchstrategy"  preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.batch.BatchStrategy">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name = "instrategy"/>
+      <include name = "createstrategy"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,121 @@
+<suite name = "test" verbose = "2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "channelname" value = "autochannel"/>
+<parameter name = "contacts" value = "autotester"/>
+<parameter name = "email" value = "autotest@ipinyou.com"/>
+<parameter name = "phonenum" value = "13800138000"/>
+
+<parameter name = "websuit" value = "autowebsite"/>
+<parameter name = "webdomain" value = "http://www.ipinyou.com.cn/"/>
+<parameter name = "contact" value = "autotester"/>
+<parameter name = "cellphone" value = "13800138000"/>
+<parameter name = "browser" value = "firefox" />
+
+
+<parameter name = "partname" value = "autopart"/>
+
+<parameter name = "positionname" value = "autoadposition"/>
+<parameter name = "possize" value = "450*550"/>
+<parameter name = "position" value = "第一屏"/>
+
+
+<parameter name = "positionname1" value = "batchposition" />
+<parameter name = "Width" value = "520" />
+<parameter name = "Height" value="250" />
+<parameter name = "defaultprice" value="5"/>
+<parameter name = "videotype" value="电影网"/>
+
+<parameter name = "filepath" value = "C:\\Users\\Administrator\\AppData\\Local\\Temp\\AdUnitCode.zip" />
+  <test name="channel function" preserve-order="true">  
+        <classes>
+            <class name="com.ipinyou.testcase.mediamannage.Channel">
+                <methods>
+                    <include name="login" />     
+                    <include name="switchmedia" /> 
+                     <include name="createwebsuit" /> 
+                </methods>
+            </class>  
+        </classes>
+    </test>
+    
+    
+     <test name="websuit function" preserve-order="true">  
+        <classes>
+            <class name="com.ipinyou.testcase.mediamannage.WebSuit">
+                <methods>
+                    <include name="login" />     
+                    <include name="switchmedia" /> 
+                     <include name="websuit" /> 
+                </methods>
+            </class>  
+        </classes>
+    </test>
+    
+    <test name="part function" preserve-order="true">  
+        <classes>
+            <class name="com.ipinyou.testcase.mediamannage.Part">
+                <methods>
+                    <include name="login" />     
+                    <include name="switchmedia" /> 
+                     <include name="part" /> 
+                </methods>
+            </class>  
+        </classes>
+    </test>
+    
+     <test name="position function" preserve-order="true">  
+        <classes>
+            <class name="com.ipinyou.testcase.mediamannage.Position">
+                <methods>
+                    <include name="login" />     
+                    <include name="switchmedia" /> 
+                     <include name="position1" /> 
+                     <include name = "position2" /> 
+                     <include name = "check" />
+                </methods>
+            </class>  
+        </classes>
+    </test>
+    
+    <test name="batchcloseposition function" preserve-order="true">  
+        <classes>
+            <class name="com.ipinyou.testcase.mediamannage.BatchClosePosition">
+                <methods>
+                    <include name="login" />     
+                    <include name="switchmedia" /> 
+                    <include name = "batchclose" />
+                    <include name = "check" />
+                </methods>
+            </class>  
+        </classes>
+    </test>
+    
+    <test name="batchopenposition function" preserve-order="true">  
+        <classes>
+            <class name="com.ipinyou.testcase.mediamannage.BatchOpenPosition">
+                <methods>
+                    <include name="login" />     
+                    <include name="switchmedia" /> 
+                    <include name = "batchopen" />
+                    <include name = "check" />
+                </methods>
+            </class>  
+        </classes>
+    </test>
+    
+    <test name="batchdownscript function" preserve-order="true">  
+        <classes>
+            <class name="com.ipinyou.testcase.mediamannage.BatchDownScript">
+                <methods>
+                    <include name="login" />     
+                    <include name="switchmedia" /> 
+                    <include name = "batchdown" />
+                    <include name = "check" />
+                    <include name = "recover" />
+                </methods>
+            </class>  
+        </classes>
+    </test>
+    
+</suite>

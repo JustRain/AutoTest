@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="GBK"?>
+<project name="打包脚本" default="jar" basedir=".">
+	<target name="clean">
+	   <delete>
+		   <fileset dir="${basedir}" includes="auto.jar" />
+	   </delete>
+	  </target>
+   <target name="jar" depends="clean">
+      <jar destfile="auto.jar" basedir="${basedir}/bin">
+	  </jar>
+   </target>
+</project> 

@@ -1,0 +1,33 @@
+<suite name="Suite" parallel="false">
+<parameter name = "browser1" value = "chrome" />
+<parameter name = "browser" value = "chrome" />
+
+
+<parameter name = "loginname" value = "medium@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "mediumautoadvertiser"/>
+<parameter name = "orname" value = "MediumAutoOrder"/>
+<parameter name = "plname" value = "MediumAutoPlan"/>
+<parameter name = "strategyname" value = "MediumAutoStrategyDsp"/>
+<parameter name = "arriveadress" value = "http://www.baidu.com"/>
+<parameter name = "monitoraddress" value = "http://www.monitor.com"/>
+<parameter name = "exposureaddress" value = "http://www.exposure.com"/>
+<parameter name = "jpgtheme" value = "MediumUploadCreative" />
+<parameter name = "dspjpgpath" value="E:\360Downloads\medium\mediumn.jpg" />
+<parameter name = "reminder" value = "本次上传创意，成功1，失败0" />
+
+
+
+  <test name="strategy" preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.dsp.Creative">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name ="increative"/>
+      <include name ="slecomcreativejpg"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

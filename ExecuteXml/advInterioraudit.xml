@@ -1,0 +1,19 @@
+<suite name = "test" verbose = "2">
+<parameter name = "checkloginname" value = "xuchong@ipinyou.com" />
+<parameter name = "checkpassword" value = "aaaaaa"/>
+<parameter name = "browser" value = "firefox" />
+
+
+<test name = "advinterioraudit function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.dsp.AdvInteriorAudit">
+ <methods>
+                    <include name="login" /> 
+                    <include name="interioraudit" />
+                    <include name = "check"/>
+                          
+</methods>
+</class>
+</classes>
+</test>
+</suite>

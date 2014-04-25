@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="2" name="Failed suite [test]">
+  <parameter name="editpricegoal" value="到达单价"/>
+  <parameter name="classifyexclude" value="retargetingcode2、"/>
+  <parameter name="editrate" value="1"/>
+  <parameter name="strname" value="BatchStrategyDsp"/>
+  <parameter name="conexclude" value="conversioncode2、"/>
+  <parameter name="batchblack" value="batchblack"/>
+  <parameter name="pyidcategories" value="test"/>
+  <parameter name="classfytext" value="retargetingcode1、"/>
+  <parameter name="dailyreminder" value="选择每日预算均匀，每日预算必填且不低于50元"/>
+  <parameter name="blackcount" value="1"/>
+  <parameter name="password" value="aaaaaa"/>
+  <parameter name="editscriptcode" value="editalgo=editares"/>
+  <parameter name="loginname" value="xuchong@ipinyou.com"/>
+  <parameter name="platetext" value="Adx,Baidu,BaoFeng,Iqiyi,Miaozhen,Shanda,Sina,Tanx,Tencent,Youku"/>
+  <parameter name="editalgorithmCode" value="哈迪斯"/>
+  <parameter name="retartext" value="全站访客"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="editpreferdeal" value="editPreferDeal1,editPreferDeal2"/>
+  <parameter name="areatext" value="全国"/>
+  <parameter name="editblanceputin" value="每日预算均匀"/>
+  <parameter name="editremark" value="editremark"/>
+  <parameter name="plname" value="AutoPlan"/>
+  <parameter name="ostext" value="不限"/>
+  <parameter name="cookietext" value="testcookie"/>
+  <parameter name="peopleproperty" value="人口属性 &gt; 性别 &gt; 女性"/>
+  <parameter name="clicksele" value="点击过本广告主广告"/>
+  <parameter name="whitecount" value="1"/>
+  <parameter name="browsertext" value="IE6、IE7、IE8、IE9、IE10、IE11、Chrome、Firefox、Safari、Opera、遨游、TheWorld、Sogou、Baidu、猎豹、QQ、360、其它"/>
+  <parameter name="dailybudget" value="50"/>
+  <parameter name="pyid" value="testcookie"/>
+  <parameter name="plateposition" value="Shanda=;Tencent=;Sina=1,255,0;Iqiyi=;Miaozhen=;Adx=1,255,0;BaoFeng=;Baidu=1,2,0;Tanx=1,2,3,4,5,255,0"/>
+  <parameter name="blacklists" value="http://www.test.com"/>
+  <parameter name="strategyname" value="AutoStrategyDsp"/>
+  <parameter name="editreachprice" value="reach=5.00"/>
+  <parameter name="positonblack" value="positonblack"/>
+  <parameter name="peopletext" value="不限"/>
+  <parameter name="unitcpc" value="5.00"/>
+  <parameter name="peopclassfy" value="autotest、autotest、autotest"/>
+  <parameter name="edithighprice" value="10.00"/>
+  <parameter name="context" value="conversioncode1、"/>
+  <parameter name="orname" value="AutoOrder"/>
+  <parameter name="positionwhite" value="positionwhite"/>
+  <parameter name="adname" value="autoadvertiser"/>
+  <parameter name="editeffectgoal" value="点击率"/>
+  <test name="batcheditstrategy function(failed)">
+    <classes>
+      <class name="com.ipinyou.testcase.batch.BatchEditStrategy">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="batchedit" invocation-numbers="0"/>
+          <include name="afterTest"/>
+          <include name="check" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.ipinyou.testcase.batch.BatchEditStrategy -->
+    </classes>
+  </test> <!-- batcheditstrategy function(failed) -->
+</suite> <!-- Failed suite [test] -->

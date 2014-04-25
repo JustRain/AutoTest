@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "test" verbose="2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "orname" value = "AutoOrder"/>
+<parameter name = "plname" value = "AutoPlan"/>
+<parameter name = "totalbudget" value = "100"/>
+<parameter name = "dailybudget" value = "50"/>
+<parameter name = "imptotallimit" value = "100"/>
+<parameter name = "clickTotalLimit" value = "100000"/>
+<parameter name = "imdailylimit" value = "50"/>
+<parameter name = "clickdailylimit" value = "50000"/>
+<parameter name = "campaignindvdlimitimplimit" value = "100"/>
+<parameter name = "campaignindvdlimitclicklimit" value = "10"/>
+<parameter name = "creativeindvdlimitimplimit" value = "10"/>
+<parameter name = "creativeindvdlimitclicklimit" value = "10"/>
+<parameter name = "statecoefficient" value = "5%"/>
+
+<parameter name = "planname1" value = "BatchPlan"/>
+<parameter name = "planname2" value = "AutoPlan"/>
+
+<parameter name = "batchstrategyname" value = "BatchStrategyDsp"/>
+
+<parameter name = "name1" value = "BatchStrategyDsp"/>
+<parameter name = "name2" value = "AutoStrategyDsp"/>
+
+<parameter name = "pyidcategories" value = "test"/>
+<parameter name = "pyid" value = "testcookie"/>
+<parameter name = "blacklists" value = "http://www.test.com"/>
+<parameter name = "strname" value = "BatchStrategyDsp"/>
+
+<parameter name = "peopleproperty" value = "人口属性 > 性别 > 女性"/>
+<parameter name = "retartext" value = "全站访客"/>
+<parameter name = "classfytext" value = "retargetingcode1、"/>
+<parameter name = "context" value = "conversioncode1、"/>
+<parameter name = "peopletext" value = "不限"/>
+<parameter name = "cookietext" value = "testcookie"/>
+<parameter name = "areatext" value = "全国"/>
+<parameter name = "platetext" value = "不限"/>
+<parameter name = "ostext" value = "不限"/>
+<parameter name = "browsertext" value = "IE6、IE7、IE8、IE9、IE10、Chrome、Firefox、Safari、Opera、遨游、TheWorld、Sogou、Baidu、猎豹、QQ、360、其它"/>
+
+<parameter name = "classifyexclude" value = "retargetingcode2、"/>
+<parameter name = "conexclude" value = "conversioncode2、" />
+<parameter name = "clicksele" value = "点击过本广告主广告" />
+<parameter name = "peopclassfy" value = "autotest、autotest、autotest" />
+<parameter name = "blacklistold" value = "http://www.test.com" />
+<parameter name = "blacklist" value = "http://www.add1.com http://www.add2.com"/>
+<parameter name = "whitelist" value = "http://www.white1.com http://www.white2.com"/>
+<parameter name = "strname" value = "BatchAutoStrategyDsp"/> 
+<parameter name = "blacklisttext" value = "http://www.add1.com http://www.add2.com"/>
+<parameter name = "whitelisttext" value = "http://www.white1.com http://www.white2.com"/>
+<parameter name = "batchblack" value = "batchblack" />
+
+<parameter name = "pyidcategories" value = "test"/>
+<parameter name = "pyid" value = "testcookie"/>
+<parameter name = "blacklists" value = "http://www.test.com"/>
+<parameter name = "strategyname" value = "AutoStrategyDsp" />
+<parameter name = "strname" value = "BatchStrategyDsp"/>
+
+<parameter name = "peopleproperty" value = "人口属性 > 性别 > 女性"/>
+<parameter name = "retartext" value = "全站访客"/>
+<parameter name = "classfytext" value = "retargetingcode1、"/>
+<parameter name = "context" value = "conversioncode1、"/>
+<parameter name = "peopletext" value = "不限"/>
+<parameter name = "cookietext" value = "testcookie"/>
+<parameter name = "areatext" value = "全国"/>
+<parameter name = "platetext" value = "Adx,Baidu,BaoFeng,Iqiyi,Miaozhen,Shanda,Sina,Tanx,Tencent,Youku"/>
+<parameter name = "ostext" value = "不限"/>
+<parameter name = "browsertext" value = "IE6、IE7、IE8、IE9、IE10、IE11、Chrome、Firefox、Safari、Opera、遨游、TheWorld、Sogou、Baidu、猎豹、QQ、360、其它"/>
+<parameter name = "batchblack" value = "batchblack" />
+<parameter name = "dailybudget" value = "50"/>
+
+<parameter name = "classifyexclude" value = "retargetingcode2、"/>
+<parameter name = "conexclude" value = "conversioncode2、" />
+<parameter name = "clicksele" value = "点击过本广告主广告" />
+<parameter name = "peopclassfy" value = "autotest、autotest、autotest" />
+<parameter name = "blackcount" value = "1" />
+<parameter name = "whitecount" value = "1" /> 
+
+<parameter name = "edithighprice" value = "10.00" />
+<parameter name = "editpricegoal" value = "到达单价" />
+<parameter name = "unitcpc" value = "5.00" />
+<parameter name = "editeffectgoal" value = "点击率" />
+<parameter name = "editrate" value = "1" />
+<parameter name = "editscriptcode" value = "editalgo=editares" />
+<parameter name = "editremark" value = "editremark" />
+<parameter name = "editblanceputin" value = "每日预算均匀" />
+<parameter name = "editpreferdeal" value = "editPreferDeal1,editPreferDeal2" />
+<parameter name = "editalgorithmCode" value = "哈迪斯" />
+<parameter name = "editreachprice" value = "reach=5.00" />
+<parameter name = "plateposition" value = "Shanda=;Tencent=;Sina=1,255,0;Iqiyi=;Miaozhen=;Adx=1,255,0;BaoFeng=;Baidu=1,2,0;Tanx=1,2,3,4,5,255,0"  />
+
+<parameter name = "positonblack" value="positonblack" />
+<parameter name = "positionwhite" value="positionwhite" />
+<parameter name = "dailyreminder" value = "选择每日预算均匀，每日预算必填且不低于50元" />
+
+<parameter name = "plname1" value = "BatchPlan"/>
+
+<parameter name = "creaname" value = "batchcreative"/>
+<parameter name = "arriveadress" value = "http://www.baidu.com"/>
+<parameter name = "monitoraddress" value = "http://www.monitor.com"/>
+<parameter name = "exposureaddress" value = "http://www.exposure.com"/>
+<parameter name = "str1" value = "BatchStrategyDsp" />
+
+<parameter name = "arriveurl" value = "http://www.baidu4.com" />
+<parameter name =  "clickurl" value = "http://www.monitor4.com" />
+<parameter name = "trackurl" value = "http://www.exposure4.com" />
+<parameter name = "arriveurlrecover" value = "http://www.baidu.com" />
+
+<parameter name = "creativetheme" value = "updatebatchcreative" />
+<parameter name = "creativethemerecover" value = "batchcreative" />
+<parameter name = "parenttext" value= "美食" />
+<parameter name = "childtext" value = "美食" />
+<parameter name = "copystr1" value="AutoStrategyDsp-复本" />
+<parameter name = "copystr2" value="BatchStrategyDsp-复本" />
+<parameter name = "browser" value = "chrome" />
+
+<parameter name = "batchpath" value = "E:\360Downloads\batchcreative.jpg" />
+
+  <test name="Test" preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.batch.BatchPlan">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name = "inplan"/>
+      <include name = "createplan"/>
+      </methods>
+      </class>
+    </classes>
+  </test> 
+  
+  <test name = "batchopenplan function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.BatchOpenPlan">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name="batchopen" />                     
+                    <include name="check1" /> 
+                    <include name="check2" />                     
+                                        
+                                    
+</methods>
+</class>
+</classes>
+</test>
+  
+ <test name = "batchcloseplan function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.BatchClosePlan">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name="batchclose" />                     
+                    <include name="check1" /> 
+                    <include name="check2" />                     
+                                        
+                                    
+</methods>
+</class>
+</classes>
+</test>
+
+ <test name="batchstrategy"  preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.batch.BatchStrategy">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name = "instrategy"/>
+      <include name = "createstrategy"/>
+      </methods>
+      </class>
+    </classes>
+  </test> 
+  
+  <test name = "batchopenstrategy function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.BatchOpenStrategy">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name="batchopen" />                     
+                    <include name="check1" /> 
+                    <include name="check2" />                                                                                              
+</methods>
+</class>
+</classes>
+</test>
+
+<test name = "batchclosestrategy function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.BatchCloseStrategy">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name="batchclose" />                     
+                    <include name="check1" /> 
+                    <include name="check2" />                                                                                              
+</methods>
+</class>
+</classes>
+</test> 
+ 
+ <test name = "batcheditstrategy function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.BatchEditStrategy">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name="batchedit" />      
+                    <include name = "check" />               
+                                                                                                                
+</methods>
+</class>
+</classes>
+</test>
+ 
+  <test name = "batchaddblacklist function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.BatchAddBlacklist">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name="batchaddblacklist" />    
+                    <include name="check" />                     
+                                     
+                                                                                           
+</methods>
+</class>
+</classes>
+</test>
+ 
+ <test name = "batchcopystrategy function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.BatchCopyStrategy">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name = "batchcopy" />
+                    <include name = "check" />                                                                  
+</methods>
+</class>
+</classes>
+</test> 
+ 
+ <test name = "batchuploadcreative function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.BatchUploadCreative">
+ <methods>
+ 
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name="batchuploadcreative" />  
+                    <include name = "check" />                   
+                                                                                                      
+</methods>
+</class>
+</classes>
+</test>
+ 
+ <test name = "batchopencreative function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.BatchOpenCreative">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name = "batchopencreative" />
+                    <include name = "check" />
+                                                                                                      
+</methods>
+</class>
+</classes>
+</test>
+ 
+ <test name = "batchclosecreative function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.BatchCloseCreative">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name = "batchclosecreative" />
+                    <include name = "check" />
+                                                                                                      
+</methods>
+</class>
+</classes>
+</test>
+ 
+ <test name = "batchupdatecreativeurl function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.BatchUpdataCreativeUrl">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name = "batchupdatecreativearrive" />
+                    <include name = "batchupdatecreativeclick" />
+                    <include name = "batchupdatetrack" />
+                    <include name = "check" />
+                                                                                                      
+</methods>
+</class>
+</classes>
+</test>
+ 
+ <test name = "batchupdatecreativetheme.xml function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.BatchUpdateCreativeTheme">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name = "batchupdatecreativetheme" />
+                    <include name = "check" />
+                    <include name = "recover" />
+                                                                                                      
+</methods>
+</class>
+</classes>
+</test>
+
+<test name = "batchupdatecreativetype.xml function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.BatchUpdateCreativeType">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name = "batchupdatecreativetheme" />
+                    <include name = "check" />
+                                                                                                      
+</methods>
+</class>
+</classes>
+</test>
+ 
+</suite>

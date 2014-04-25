@@ -1,0 +1,26 @@
+<suite name = "test" verbose = "2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "orname" value = "AutoOrder"/>
+<parameter name = "planname1" value = "BatchPlan"/>
+<parameter name = "planname2" value = "AutoPlan"/>
+<parameter name = "browser" value = "firefox" />
+
+
+<test name = "batchopenplan function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.BatchOpenPlan">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name="batchopen" />                     
+                    <include name="check1" /> 
+                    <include name="check2" />                     
+                                        
+                                    
+</methods>
+</class>
+</classes>
+</test>
+</suite>

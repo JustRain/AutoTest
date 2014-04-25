@@ -1,0 +1,31 @@
+<suite name="ipinyou" verbose="2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "channelname" value = "autochannel"/>
+<parameter name = "websuit" value = "autowebsite"/>
+<parameter name = "partname" value = "autopart"/>
+
+<parameter name = "positionname" value = "autoadposition"/>
+<parameter name = "possize" value = "450*550"/>
+<parameter name = "position" value = "第一屏"/>
+<parameter name = "positionname1" value = "batchposition" />
+<parameter name = "Width" value = "520" />
+<parameter name = "Height" value="250" />
+<parameter name = "defaultprice" value="5"/>
+<parameter name = "videotype" value="电影网"/>
+<parameter name = "browser" value = "firefox" />
+
+    <test name="position function" preserve-order="true">  
+        <classes>
+            <class name="com.ipinyou.testcase.mediamannage.Position">
+                <methods>
+                    <include name="login" />     
+                    <include name="switchmedia" /> 
+                     <include name="position1" /> 
+                     <include name = "position2" /> 
+                     <include name = "check" />
+                </methods>
+            </class>  
+        </classes>
+    </test>
+</suite>

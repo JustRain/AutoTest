@@ -1,0 +1,21 @@
+<suite name = "test" verbose = "2">
+<parameter name = "checkloginname" value = "xuchong@ipinyou.com" />
+<parameter name = "checkpassword" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "acount" value = "1000"/>
+<parameter name = "browser" value = "chrome" />
+<parameter name = "paypassword" value = "aaaaaa"/>
+<parameter name = "remark" value = "remark" />
+
+<test name = "allot function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.dsp.Allot">
+ <methods>
+                    <include name="login" /> 
+                    <include name="allot" /> 
+                                        
+</methods>
+</class>
+</classes>
+</test>
+</suite>

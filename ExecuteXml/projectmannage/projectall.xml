@@ -1,0 +1,249 @@
+<suite name = "test" verbose = "2">
+<parameter name = "loginname" value = "autoproject@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "projectautoadvertiser"/>
+<parameter name = "registername" value = "testCompany"/>
+<parameter name = "advertiserwebsite" value = "http://www.test.com"/>
+<parameter name = "cellphone" value = "13800138000"/>
+<parameter name = "contactname" value = "test联系人"/>
+<parameter name = "email" value = "test@ipinyou.com"/>
+<parameter name = "path" value = "E:\\Eclipse workspace\\{CB4F4C01-3548-4480-9BD6-F94DEF82F568}.jpg"/>
+<parameter name = "industrytext" value = "交通类" />
+<parameter name = "servicefeerate" value = "10%" />
+<parameter name = "orgcodeno" value = "12345678-1" />
+
+<parameter name = "checkloginname" value = "xuchong@ipinyou.com" />
+<parameter name = "checkpassword" value = "aaaaaa"/>
+
+<parameter name = "acount" value = "1000"/>
+<parameter name = "paypassword" value = "aaaaaa"/>
+<parameter name = "remark" value = "remark" />
+
+<parameter name = "advname" value = "projectautoadvertiser"/>
+<parameter name = "catename" value = "projectretargetingcode1"/>
+<parameter name = "catevalue" value = "5"/>
+<parameter name = "catename1" value = "projectretargetingcode2"/>
+<parameter name = "catevalue1" value = "6"/>
+<parameter name = "conname" value = "projectconversioncode1"/>
+<parameter name = "conname1" value = "projectconversioncode2"/>
+<parameter name = "agentname" value = "北京品友互动信息技术有限公司" />
+<parameter name = "advertisername" value = "autoadvertiser" />
+
+<parameter name = "orname" value = "ProjectAutoOrder"/>
+<parameter name = "orderbudget" value = "100"/>
+<parameter name = "contractNo" value = "NO001"/>
+<parameter name = "KPI1" value = "1"/>
+<parameter name = "KPI2" value = "5"/>
+<parameter name = "coverpoint" value = "点击转化"/>
+<parameter name = "KPI1" value = "1"/>
+<parameter name = "KPI2" value = "5"/>
+<parameter name = "coverpoint" value = "点击转化"/>
+
+<parameter name = "plname" value = "ProjectAutoPlan"/>
+<parameter name = "totalbudget" value = "100"/>
+<parameter name = "dailybudget" value = "50"/>
+<parameter name = "imptotallimit" value = "100"/>
+<parameter name = "clickTotalLimit" value = "100000"/>
+<parameter name = "imdailylimit" value = "50"/>
+<parameter name = "clickdailylimit" value = "50000"/>
+<parameter name = "campaignindvdlimitimplimit" value = "100"/>
+<parameter name = "campaignindvdlimitclicklimit" value = "10"/>
+<parameter name = "creativeindvdlimitimplimit" value = "10"/>
+<parameter name = "creativeindvdlimitclicklimit" value = "10"/>
+<parameter name = "statecoefficient" value = "5%"/>
+<parameter name = "KPI1" value = "1"/>
+<parameter name = "KPI2" value = "5"/>
+<parameter name = "coverpoint" value = "点击转化"/>
+<parameter name = "mobilebatchplan" value = "BatchAutoPlan" />
+
+<parameter name = "strategyname" value = "ProjectAutoStrategyDsp"/>
+<parameter name = "totlebudget" value = "100"/>
+<parameter name = "dailybudget" value = "50"/>
+<parameter name = "imptotallimit" value = "100"/>
+<parameter name = "clicktotallimit" value = "100000"/>
+<parameter name = "imdailylimit" value = "50"/>
+<parameter name = "clickdailylimit" value = "50000"/>
+<parameter name = "indvdlimitimplimit" value = "100"/>
+<parameter name = "indvdlimitclicklimit" value = "10"/>
+<parameter name = "pyidcategories" value = "test"/>
+<parameter name = "pyid" value = "testcookies"/>
+
+<parameter name = "blackdefinedname" value = "definedblackname" />
+<parameter name = "whitedefinedname" value = "definedwhitename" />
+
+<parameter name = "blacklists" value = "http://www.baidu.com"/>
+<parameter name = "whitelists" value = "http://www.white.com" />
+<parameter name = "price" value = "20"/>
+<parameter name = "cpmprice" value = "1"/>
+<parameter name = "dailyimps" value = "10"/>
+<parameter name = "scriptcode" value = "testtest"/>
+<parameter name = "remarkcode" value = "testremark"/>
+<parameter name = "cpcprice" value = "10" />
+<parameter name = "retargetingcode1" value = "projectretargetingcode1"/>
+<parameter name = "retargetingcode2" value = "projectretargetingcode2"/>
+<parameter name = "conversioncode1" value = "projectconversioncode1"/>
+<parameter name = "conversioncode2" value = "projectconversioncode2"/>
+<parameter name = "effectGoalRate" value = "0.05" />
+
+<parameter name = "adname" value = "projectautoadvertiser"/>
+<parameter name = "orname" value = "ProjectAutoOrder"/>
+<parameter name = "plname" value = "ProjectAutoPlan"/>
+<parameter name = "strategyname" value = "ProjectAutoStrategyDsp"/>
+<parameter name = "arriveadress" value = "http://www.baidu.com"/>
+<parameter name = "monitoraddress" value = "http://www.monitor.com"/>
+<parameter name = "exposureaddress" value = "http://www.exposure.com"/>
+<!-- <parameter name = "theme" value = "ProjectUploadCreative" /> -->
+<!-- <parameter name = "dsppath" value="E:\360Downloads\project\project.jpg" /> -->
+
+<parameter name = "jpgtheme" value = "ProjectUploadCreative" />
+<parameter name = "giftheme" value = "Uploadgif" />
+<parameter name = "pngtheme" value = "Uploadpng" />
+<parameter name = "flvtheme" value = "Uploadflv" />
+<parameter name = "swftheme" value = "Uploadswf" />
+<parameter name = "dspjpgpath" value="E:\360Downloads\project\project.jpg" />
+<parameter name = "dspgifpath" value="E:\360Downloads\classify\Uploadgif.gif" />
+<parameter name = "dsppngpath" value="E:\360Downloads\classify\Uploadpng.png" />
+<parameter name = "dspflvpath" value="E:\360Downloads\classify\Uploadflv.flv" />
+<parameter name = "dspswfpath" value="E:\360Downloads\classify\Uploadswf.swf" />
+<parameter name = "dspjpegpath" value="E:\360Downloads\classify\Uploadswf.swf" />
+<parameter name = "reminder" value = "本次上传创意，成功1，失败0" />
+
+<parameter name = "browser" value = "chrome" />
+<test name="advertiser function" preserve-order="true">  
+        <classes>
+            <class name="com.ipinyou.testcase.dsp.Advertiser">
+                <methods>
+                    <include name="login" />     
+                    <include name="createad" /> 
+                     <include name="check"/>
+                </methods>
+            </class>  
+        </classes>
+    </test>
+    
+    <test name = "advinterioraudit function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.dsp.AdvInteriorAudit">
+ <methods>
+                    <include name="login" /> 
+                    <include name="interioraudit" />
+                    <include name = "check"/>
+                          
+</methods>
+</class>
+</classes>
+</test>
+
+<test name = "advinteriorauditcompany function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.dsp.CompanyAudit">
+ <methods>
+                    <include name="login" /> 
+                    <include name="companyaudit" />
+                    <include name = "check"/> 
+                    
+                                        
+</methods>
+</class>
+</classes>
+</test>
+
+<test name = "allot function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.dsp.Allot">
+ <methods>
+                    <include name="login" /> 
+                    <include name="allot" /> 
+                                        
+</methods>
+</class>
+</classes>
+</test>
+
+<test name = "codecenter function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.codecenter.CodeCenter">
+ <methods>
+                    <include name="login" /> 
+                    <include name="codecenter" /> 
+                    <include name="createcategory" />                     
+                    <include name="createpageconversion" /> 
+                    <include name="createcategory1" /> 
+                    <include name="createpageconversion1" /> 
+                    
+                    
+                                        
+</methods>
+</class>
+</classes>
+</test>
+
+<test name = "order function" preserve-order="true">
+<classes>
+<class name = "com.ipinyou.testcase.dsp.Order">
+<methods>
+                    <include name="login" />     
+                    <include name="searchad" /> 
+                    <include name ="createorder"/>
+                    <include name = "check" />
+</methods>
+</class>
+</classes>
+</test>
+
+ <test name="plan function" preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.dsp.DspPlan">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name = "inplan"/>
+      <include name = "createplan"/>
+      <include name = "check" />
+      </methods>
+      </class>
+    </classes>
+  </test> 
+  
+  <test name="strategy function"  preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.dsp.Strategy">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name = "instrategy"/>
+      <include name = "createstrategy"/>
+      </methods>
+      </class>
+    </classes>
+  </test> 
+   <test name="creative function" preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.dsp.Creative">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name ="increative"/>
+      <include name = "slecomcreativejpg"/>
+      <include name = "slecomcreativeflv"/>
+      <include name = "selcomcreativeswf"/>
+      <include name = "selcomcreativepng"/>
+      <include name = "selcomcreativegif"/>
+      <include name = "completecreative"/>
+      </methods>
+      </class>
+    </classes>
+  </test> 
+  
+  <test name = "openstatus function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.dsp.OpenStatus">
+ <methods>
+                    <include name="login" />   
+                    <include name="openstatus" />                     
+</methods>
+</class>
+</classes>
+</test>
+
+</suite>

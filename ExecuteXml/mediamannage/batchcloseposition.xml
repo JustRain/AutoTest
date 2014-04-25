@@ -1,0 +1,23 @@
+<suite name="ipinyou" verbose="2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "channelname" value = "autochannel"/>
+<parameter name = "websuit" value = "autowebsite"/>
+<parameter name = "partname" value = "autopart"/>
+
+<parameter name = "browser" value = "firefox" />
+
+
+    <test name="batchcloseposition function" preserve-order="true">  
+        <classes>
+            <class name="com.ipinyou.testcase.mediamannage.BatchClosePosition">
+                <methods>
+                    <include name="login" />     
+                    <include name="switchmedia" /> 
+                    <include name = "batchclose" />
+                    <include name = "check" />
+                </methods>
+            </class>  
+        </classes>
+    </test>
+</suite>

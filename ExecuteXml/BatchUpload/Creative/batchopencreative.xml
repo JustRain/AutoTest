@@ -1,0 +1,23 @@
+<suite name = "test" verbose = "2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "orname" value = "AutoOrder"/>
+<parameter name = "plname" value = "AutoPlan"/>
+<parameter name = "strname" value = "BatchStrategyDsp" />
+<parameter name = "browser" value = "chrome" />
+
+<test name = "batchopencreative function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.BatchOpenCreative">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name = "batchopencreative" />
+                    <include name = "check" />
+                                                                                                      
+</methods>
+</class>
+</classes>
+</test>
+</suite>

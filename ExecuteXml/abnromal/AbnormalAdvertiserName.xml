@@ -1,0 +1,42 @@
+<suite name="ipinyou" verbose="2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "1"/>
+<parameter name = "adname1" value = "12345678912345678912345678912345678912345678912345678912345678910" />
+<parameter name = "adname2" value = "   " />
+<parameter name = "adname3" value = "()???..." />
+<parameter name = "registername" value = "testCompany"/>
+<parameter name = "registername1" value = "12345678912345678912345678912345678912345678912345678912345678910"/>
+<parameter name = "registername2" value = "1"/>
+<parameter name = "registername3" value = "  "/>
+<parameter name = "registername4" value = "()???.."/>
+<parameter name = "advertiserwebsite" value = "http://www.test.com"/>
+<parameter name = "advertiserwebsite1" value = "www.test.com"/>
+<parameter name = "cellphone" value = "13800138000"/>
+<parameter name = "contactname" value = "test联系人"/>
+<parameter name = "email" value = "test@ipinyou.com"/>
+<parameter name = "path" value = "E:\\Eclipse workspace\\{CB4F4C01-3548-4480-9BD6-F94DEF82F568}.jpg"/>
+<parameter name = "browser" value = "chrome" />
+<parameter name = "industrytext" value = "交通类" />
+<parameter name = "servicefeerate" value = "10%" />
+<parameter name = "adnamereminder" value = "个数必须在2和64之间" />
+<parameter name = "urlremainder" value = "个数必须在10和128之间" />
+<parameter name = "urlexample" value = "网址格式错误,请填写正确的格式,例如http://www.abc.com" />
+<parameter name = "contactremainder" value = "个数必须在2和45之间" />
+<parameter name = "emailremainder" value = "Email格式错误" />
+<parameter name = "aptituderemainder" value = "ICP证 企业营业执照 法人代表身份证 创意资质 其他广告主资质 只能为:jpg,jpeg,png,gif格式,且大小不能超过500K" />
+
+
+    <test name="advertiser function" preserve-order="true">  
+        <classes>
+            <class name="com.ipinyou.abnormaltestcase.AbnormalAdvertiserName">
+                <methods>
+                    <include name="login" />     
+                    <include name="createad" /> 
+                     <include name="check"/>
+<!--                      <include name="contentcheck" /> -->
+                </methods>
+            </class>  
+        </classes>
+    </test>
+</suite>

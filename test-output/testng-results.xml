@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="32087" started-at="2014-04-25T03:26:31Z" finished-at="2014-04-25T03:27:03Z">
+    <groups>
+    </groups>
+    <test name="StatisticsStrateg function" duration-ms="32087" started-at="2014-04-25T03:26:31Z" finished-at="2014-04-25T03:27:03Z">
+      <class name="com.ipinyou.testcase.dsp.CheckStatisticsStrategy">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.ipinyou.testcase.dsp.CheckStatisticsStrategy@17e581f9]" name="beforeTest" is-config="true" duration-ms="4482" started-at="2014-04-25T11:26:31Z" finished-at="2014-04-25T11:26:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.ipinyou.testcase.dsp.CheckStatisticsStrategy@17e581f9]" name="login" duration-ms="1454" started-at="2014-04-25T11:26:36Z" finished-at="2014-04-25T11:26:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[xuchong@ipinyou.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aaaaaa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ipinyou.testcase.dsp.CheckStatisticsStrategy@17e581f9]" name="search" duration-ms="6267" started-at="2014-04-25T11:26:37Z" finished-at="2014-04-25T11:26:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[autoadvertiser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AutoOrder]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[AutoPlan]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="intostatistic(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ipinyou.testcase.dsp.CheckStatisticsStrategy@17e581f9]" name="intostatistic" duration-ms="3574" started-at="2014-04-25T11:26:43Z" finished-at="2014-04-25T11:26:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[statisticstrategy]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://www.baidu.com/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://www.hao123.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intostatistic -->
+        <test-method status="PASS" signature="checkClickuri(java.lang.String, java.lang.String)[pri:0, instance:com.ipinyou.testcase.dsp.CheckStatisticsStrategy@17e581f9]" name="checkClickuri" duration-ms="1967" started-at="2014-04-25T11:26:47Z" finished-at="2014-04-25T11:26:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[click]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[impression]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkClickuri -->
+        <test-method status="PASS" signature="checkImpressuri()[pri:0, instance:com.ipinyou.testcase.dsp.CheckStatisticsStrategy@17e581f9]" name="checkImpressuri" duration-ms="12691" started-at="2014-04-25T11:26:49Z" finished-at="2014-04-25T11:27:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkImpressuri -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.ipinyou.testcase.dsp.CheckStatisticsStrategy@17e581f9]" name="afterTest" is-config="true" duration-ms="1635" started-at="2014-04-25T11:27:02Z" finished-at="2014-04-25T11:27:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.ipinyou.testcase.dsp.CheckStatisticsStrategy -->
+    </test> <!-- StatisticsStrateg function -->
+  </suite> <!-- Suite -->
+</testng-results>

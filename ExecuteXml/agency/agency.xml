@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "test" verbose = "2">
+<parameter name = "agencyloginname" value = "root@ipinyou.com" />
+<parameter name = "agencypassword" value = "aaaaaa"/>
+<parameter name = "agencyname" value = "AutoTest" /> 
+<parameter name = "systemid" value = "AUTOTESTONE" /> 
+<parameter name = "amount" value = "10000.00" /> 
+<parameter name = "servicerate" value = "10%" /> 
+<parameter name = "agencyemail" value = "autotestagency@ipinyou.com" /> 
+
+<parameter name = "browser" value = "chrome" />
+
+<test name = "agency function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.agency.CreateAgency">
+ <methods>
+                    <include name="login" /> 
+                    <include name = "backmannage" />
+                    <include name="createagency" />
+                    <include name = "check" /> 
+                                        
+</methods>
+</class>
+</classes>
+</test>
+
+
+</suite>

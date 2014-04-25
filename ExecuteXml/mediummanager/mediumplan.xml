@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+<parameter name = "loginname" value = "medium@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "mediumautoadvertiser"/>
+<parameter name = "orname" value = "MediumAutoOrder"/>
+<parameter name = "mobilebatchplan" value = "BatchAutoPlan" />
+<parameter name = "plname" value = "MediumAutoPlan"/>
+<parameter name = "totalbudget" value = "100"/>
+<parameter name = "dailybudget" value = "50"/>
+<parameter name = "imptotallimit" value = "100"/>
+<parameter name = "clickTotalLimit" value = "100000"/>
+<parameter name = "imdailylimit" value = "50"/>
+<parameter name = "clickdailylimit" value = "50000"/>
+<parameter name = "campaignindvdlimitimplimit" value = "100"/>
+<parameter name = "campaignindvdlimitclicklimit" value = "10"/>
+<parameter name = "creativeindvdlimitimplimit" value = "10"/>
+<parameter name = "creativeindvdlimitclicklimit" value = "10"/>
+<parameter name = "statecoefficient" value = "5%"/>
+<parameter name = "KPI1" value = "1"/>
+<parameter name = "KPI2" value = "5"/>
+<parameter name = "coverpoint" value = "点击转化"/>
+<parameter name = "browser" value = "chrome" />
+
+
+
+  <test name="Test" preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.dsp.DspPlan">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name = "inplan"/>
+      <include name = "createplan"/>
+      <include name = "check" />
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

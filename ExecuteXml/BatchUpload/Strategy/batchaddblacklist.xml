@@ -1,0 +1,33 @@
+<suite name = "test" verbose = "2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "orname" value = "AutoOrder"/>
+<parameter name = "plname" value = "AutoPlan"/>
+<parameter name = "blacklist" value = "http://www.add1.com http://www.add2.com"/>
+<parameter name = "whitelist" value = "http://www.white1.com http://www.white2.com"/>
+<parameter name = "strname" value = "BatchStrategyDsp"/>
+<parameter name = "blacklistold" value = "http://www.test.com" />
+<parameter name = "blacklisttext" value = "http://www.add1.com http://www.add2.com"/>
+<parameter name = "whitelisttext" value = "http://www.white1.com http://www.white2.com"/>
+
+
+<parameter name = "browser" value = "chrome" />
+
+
+
+<test name = "batchaddblacklist function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.BatchAddBlacklist">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name="batchaddblacklist" />    
+                    <include name="check" />                     
+                                     
+                                                                                           
+</methods>
+</class>
+</classes>
+</test>
+</suite>

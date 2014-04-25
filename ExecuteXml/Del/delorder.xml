@@ -1,0 +1,27 @@
+<suite name="ipinyou" verbose="2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "delorname" value = "DelAutoOrder"/>
+<parameter name = "orderbudget" value = "100"/>
+<parameter name = "contractNo" value = "NO001"/>
+<parameter name = "KPI1" value = "1"/>
+<parameter name = "KPI2" value = "5"/>
+<parameter name = "coverpoint" value = "点击转化"/>
+<parameter name = "browser" value = "chrome" />
+
+<test name = "order function" preserve-order="true">
+<classes>
+<class name = "com.ipinyou.testcase.dsp.del.DelOrder">
+<methods>
+                    <include name="login" />     
+                    <include name="searchad" /> 
+                    <include name ="createorder"/>
+                    <include name = "check" />
+                    <include name = "delorder" />
+                    <include name = "datacheck" />
+</methods>
+</class>
+</classes>
+</test>
+</suite>

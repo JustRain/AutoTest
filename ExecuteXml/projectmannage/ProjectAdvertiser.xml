@@ -1,0 +1,27 @@
+<suite name="ipinyou" verbose="2">
+<parameter name = "loginname" value = "autoproject@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "projectautoadvertiser"/>
+<parameter name = "registername" value = "testCompany"/>
+<parameter name = "advertiserwebsite" value = "http://www.test.com"/>
+<parameter name = "cellphone" value = "13800138000"/>
+<parameter name = "contactname" value = "test联系人"/>
+<parameter name = "email" value = "test@ipinyou.com"/>
+<parameter name = "path" value = "E:\\Eclipse workspace\\{CB4F4C01-3548-4480-9BD6-F94DEF82F568}.jpg"/>
+<parameter name = "browser" value = "chrome" />
+<parameter name = "industrytext" value = "交通类" />
+<parameter name = "servicefeerate" value = "10%" />
+<parameter name = "orgcodeno" value = "12345678-1" />
+
+    <test name="advertiser function" preserve-order="true">  
+        <classes>
+            <class name="com.ipinyou.testcase.dsp.Advertiser">
+                <methods>
+                    <include name="login" />     
+                    <include name="createad" /> 
+                     <include name="check"/>
+                </methods>
+            </class>  
+        </classes>
+    </test>
+</suite>

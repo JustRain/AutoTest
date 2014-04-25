@@ -1,0 +1,38 @@
+<suite name = "test" verbose = "2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "orname" value = "AutoOrder"/>
+<parameter name = "plname" value = "AutoPlan"/>
+<parameter name = "appstrname" value = "AutoStrategyMobApp"/>
+<parameter name = "webstrname" value = "AutoStrategyMobWeb"/>
+
+<parameter name = "batchappwhitelist" value = "batchappwhitelist" />
+<parameter name = "batchappblacklist" value = "batchappblacklist" />
+
+<parameter name = "batchappwhitelistold" value = "whiteapp" />
+<parameter name = "batchappblacklistold" value = "blackapp" />
+
+
+<parameter name = "browser" value = "chrome" />
+
+<parameter name = "batchwebblackname" value = "batchwebblackname" />
+<parameter name = "batchwebwhitename" value = "batchwebwhitename" />
+<parameter name = "batchwebblackurl" value = "http://www.batchwebblackname.com" />
+<parameter name = "batchwebwhiteurl" value = "http://www.batchwebwhitename.com" />
+
+<test name = "batchaddblacklistapp function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.Mobile.BatchAddBlacklistMobApp">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name="batchaddblacklist" />    
+                    <include name="check" />                     
+                                     
+                                                                                           
+</methods>
+</class>
+</classes>
+</test>
+</suite>

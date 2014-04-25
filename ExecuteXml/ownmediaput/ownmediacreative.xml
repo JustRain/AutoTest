@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "orname" value = "AutoOrder"/>
+<parameter name = "plname" value = "AutoPlan"/>
+<parameter name = "strategyname" value = "ProprietaryMediaStrategy"/>
+<parameter name = "arriveadress" value = "http://www.baidu.com"/>
+<parameter name = "ownmediatheme" value = "ownmediacreative" />
+<parameter name = "browser" value = "chrome" />
+<parameter name = "ownpath" value = "E:\360Downloads\450550.jpg" />
+
+  <test name="strategy" preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.ownmedia.OwnMediaCreative">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name ="increative"/>
+      <include name ="selcreative"/>
+      <include name = "completecreative"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,20 @@
+<suite name = "test" verbose = "2">
+<parameter name = "loginname" value = "medium@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "mediumautoadvertiser"/>
+<parameter name = "orname" value = "MediumAutoOrder"/>
+<parameter name = "plname" value = "MediumAutoPlan"/>
+<parameter name = "strategyname" value = "MediumAutoStrategyDsp"/>
+<parameter name = "browser" value = "chrome" />
+
+<test name = "openstatus function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.dsp.OpenStatus">
+ <methods>
+                    <include name="login" />   
+                    <include name="openstatus" />                     
+</methods>
+</class>
+</classes>
+</test>
+</suite>

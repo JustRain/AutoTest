@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+<parameter name = "loginname" value = "autoproject@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "projectautoadvertiser"/>
+<parameter name = "orname" value = "ProjectAutoOrder"/>
+<parameter name = "plname" value = "ProjectAutoPlan"/>
+<parameter name = "strategyname" value = "ProjectAutoStrategyDsp"/>
+<parameter name = "totlebudget" value = "100"/>
+<parameter name = "dailybudget" value = "50"/>
+<parameter name = "imptotallimit" value = "100"/>
+<parameter name = "clicktotallimit" value = "100000"/>
+<parameter name = "imdailylimit" value = "50"/>
+<parameter name = "clickdailylimit" value = "50000"/>
+<parameter name = "indvdlimitimplimit" value = "100"/>
+<parameter name = "indvdlimitclicklimit" value = "10"/>
+<parameter name = "pyidcategories" value = "test"/>
+<parameter name = "pyid" value = "testcookies"/>
+
+<parameter name = "blackdefinedname" value = "definedblackname" />
+<parameter name = "whitedefinedname" value = "definedwhitename" />
+
+<parameter name = "blacklists" value = "http://www.baidu.com"/>
+<parameter name = "whitelists" value = "http://www.white.com" />
+<parameter name = "price" value = "20"/>
+<parameter name = "cpmprice" value = "1"/>
+<parameter name = "dailyimps" value = "10"/>
+<parameter name = "scriptcode" value = "testtest"/>
+<parameter name = "remarkcode" value = "testremark"/>
+<parameter name = "browser" value = "chrome" />
+<parameter name = "cpcprice" value = "10" />
+<parameter name = "retargetingcode1" value = "projectretargetingcode1"/>
+<parameter name = "retargetingcode2" value = "projectretargetingcode2"/>
+<parameter name = "conversioncode1" value = "projectconversioncode1"/>
+<parameter name = "conversioncode2" value = "projectconversioncode2"/>
+<parameter name = "effectGoalRate" value = "0.05" />
+
+  <test name="Test"  preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.dsp.Strategy">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name = "instrategy"/>
+      <include name = "createstrategy"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

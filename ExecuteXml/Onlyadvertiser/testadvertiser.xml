@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ipinyou" verbose="2">
+<parameter name="loginname" value="autotest@ipinyou.com"></parameter>
+<parameter name="password" value="aaaaaa"></parameter>
+<parameter name="advertiserurl" value="http://console.ipinyou.com/advertiser/"></parameter>
+<parameter name="browser" value="chrome"></parameter>
+<test name="login function" preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.onlyadvertiser.TestAdvertiser">
+        <methods>
+        <include name="login"></include>
+        <include name="switchurl"></include>
+        <include name="check"></include>
+        </methods>
+      </class>
+    </classes>
+</test>
+</suite>

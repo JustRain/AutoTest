@@ -1,0 +1,27 @@
+<suite name = "test" verbose = "2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "orname" value = "AutoOrder"/>
+<parameter name = "plname" value = "AutoPlan"/>
+<parameter name = "plname1" value = "BatchPlan"/>
+
+<parameter name = "copystr1" value="AutoStrategyDsp-复本" />
+<parameter name = "copystr2" value="BatchStrategyDsp-复本" />
+
+<parameter name = "browser" value = "chrome" />
+
+
+<test name = "batchcopystrategy function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.BatchCopyStrategy">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name = "batchcopy" />
+                    <include name = "check" />                                                                  
+</methods>
+</class>
+</classes>
+</test>
+</suite>

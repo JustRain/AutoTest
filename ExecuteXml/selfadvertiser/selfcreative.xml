@@ -1,0 +1,32 @@
+<suite name="Suite" parallel="false">
+<parameter name = "browser1" value = "chrome" />
+
+<parameter name = "loginname" value = "selfautotest@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "selfautoadvertiser"/>
+<parameter name = "orname" value = "SelfAutoOrder"/>
+<parameter name = "plname" value = "SelfAutoPlan"/>
+<parameter name = "strategyname" value = "SelfAutoStrategyDsp"/>
+<parameter name = "arriveadress" value = "http://www.baidu.com"/>
+<parameter name = "monitoraddress" value = "http://www.monitor.com"/>
+<parameter name = "exposureaddress" value = "http://www.exposure.com"/>
+<parameter name = "theme" value = "SelfUploadCreative" />
+<parameter name = "dsppath" value="E:\360Downloads\self\self.jpg" />
+<parameter name="browser" value="chrome" />
+
+
+
+  <test name="strategy" preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.selfadvertiser.Creative">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name ="increative"/>
+      <include name ="selcreative"/>
+      <include name = "completecreative"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

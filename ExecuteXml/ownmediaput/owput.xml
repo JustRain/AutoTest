@@ -1,0 +1,104 @@
+<suite name = "testput" verbose = "2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "orname" value = "AutoOrder"/>
+<parameter name = "plname" value = "AutoPlan"/>
+<parameter name = "strategyname" value = "AutoStrategyOmediaPut"/>
+<parameter name = "arriveadress" value = "http://www.baidu.com"/>
+<parameter name = "channel" value = "autochannel"/>
+<parameter name = "websuit" value = "autowebsite"/>
+<parameter name = "websuit" value = "autowebsite"/>
+<parameter name = "part" value = "autopart"/>
+<parameter name = "filepath" value = "D:\\website\\web1.html"/>
+<parameter name = "text1" value = "奢侈品" />
+<parameter name = "text2" value = "奢侈品" />
+<parameter name = "searchname" value = "ownmediacreative"/>
+<parameter name = "ownmediatheme" value = "ownmediacreative" />
+<parameter name = "position" value = "autoadposition" />
+<parameter name = "browser" value = "chrome" />
+<parameter name = "ownpath" value = "E:\360Downloads\450550.jpg" />
+<parameter name = "advertiserposition" value = "autowebsite" />
+
+<test name = "strategy function" preserve-order="true">
+<classes>
+
+<class name="com.ipinyou.testcase.ownmedia.OwnMediaStrategy">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name = "instrategy"/>
+      <include name = "Createownstrategy"/>
+      </methods>
+      </class>
+</classes>
+
+
+</test>
+
+<test name = "creative function" preserve-order="true">
+<classes>
+    <class name="com.ipinyou.testcase.ownmedia.OwnMediaCreative">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name ="increative"/>
+      <include name ="selcreative"/>
+      <include name = "completecreative"/>
+      </methods>
+      </class>
+</classes>
+</test>
+
+<!-- <test name="uploadhistorycreative" preserve-order="true"> -->
+<!--     <classes> -->
+<!--       <class name="com.ipinyou.testcase.ownmedia.UploadHisttoryCreative"> -->
+<!--       <methods> -->
+<!--       <include name = "login"/> -->
+<!--       <include name ="search"/> -->
+<!--       <include name ="increative"/> -->
+<!--       <include name ="selecthistorycreative"/> -->
+<!--       <include name ="choosecreative"/> -->
+<!--       </methods> -->
+<!--       </class> -->
+<!--     </classes> -->
+<!--   </test>  -->
+
+
+
+<test name = "downscript function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.ownmedia.DownScript">
+ <methods>
+                    <include name="login" />   
+                    <include name="downscript"/>                     
+</methods>
+</class>
+</classes>
+</test>
+
+<test name = "status function" preserve-order="true">
+<classes>
+<class name = "com.ipinyou.testcase.ownmedia.OwnMediaStatus">
+<methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name = "ownmediastatus"/>
+
+</methods>
+
+
+</class>
+</classes>
+</test>
+
+<!-- <test name = "ownmediaput function" preserve-order="true"> -->
+<!-- <classes> -->
+<!-- <class name="com.ipinyou.put.OwnMediaPut"> -->
+<!--  <methods> -->
+<!--                     <include name="ownmediaput" />                         -->
+<!-- </methods> -->
+<!-- </class> -->
+<!-- </classes> -->
+<!-- </test> -->
+</suite>

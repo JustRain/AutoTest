@@ -1,0 +1,156 @@
+<suite name = "test" verbose = "2">
+<parameter name = "loginname" value = "selfautotest@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "advname" value = "selfautoadvertiser"/>
+<parameter name = "catename" value = "selfretargetingcode1"/>
+<parameter name = "catevalue" value = "7"/>
+<parameter name = "catename1" value = "selfretargetingcode2"/>
+<parameter name = "catevalue1" value = "8"/>
+<parameter name = "conname" value = "selfconversioncode1"/>
+<parameter name = "conname1" value = "selfconversioncode2"/>
+<parameter name = "agentname" value = "自动化代理商" />
+<parameter name = "advertisername" value = "autoadvertiser" />
+<parameter name = "orgcodeno" value = "12345678-1" />
+
+<parameter name = "adname" value = "selfautoadvertiser"/>
+<parameter name = "orname" value = "SelfAutoOrder"/>
+<parameter name = "orderbudget" value = "100"/>
+<parameter name = "contractNo" value = "NO001"/>
+<parameter name = "KPI1" value = "1"/>
+<parameter name = "KPI2" value = "5"/>
+<parameter name = "coverpoint" value = "点击转化"/>
+
+<parameter name = "plname" value = "SelfAutoPlan"/>
+<parameter name = "totalbudget" value = "100"/>
+<parameter name = "dailybudget" value = "50"/>
+<parameter name = "imptotallimit" value = "100"/>
+<parameter name = "clickTotalLimit" value = "100000"/>
+<parameter name = "imdailylimit" value = "50"/>
+<parameter name = "clickdailylimit" value = "50000"/>
+<parameter name = "campaignindvdlimitimplimit" value = "100"/>
+<parameter name = "campaignindvdlimitclicklimit" value = "10"/>
+<parameter name = "creativeindvdlimitimplimit" value = "10"/>
+<parameter name = "creativeindvdlimitclicklimit" value = "10"/>
+<parameter name = "statecoefficient" value = "5%"/>
+
+<parameter name = "strategyname" value = "SelfAutoStrategyDsp"/>
+<parameter name = "totlebudget" value = "100"/>
+<parameter name = "dailybudget" value = "50"/>
+<parameter name = "imptotallimit" value = "100"/>
+<parameter name = "clicktotallimit" value = "100000"/>
+<parameter name = "imdailylimit" value = "50"/>
+<parameter name = "clickdailylimit" value = "50000"/>
+<parameter name = "indvdlimitimplimit" value = "100"/>
+<parameter name = "indvdlimitclicklimit" value = "10"/>
+<parameter name = "pyidcategories" value = "test"/>
+<parameter name = "pyid" value = "testcookies"/>
+
+<parameter name = "blackdefinedname" value = "selfdefinedblackname" />
+<parameter name = "whitedefinedname" value = "selfdefinedwhitename" />
+
+<parameter name = "blacklists" value = "http://www.baidu.com"/>
+<parameter name = "whitelists" value = "http://www.white.com" />
+<parameter name = "price" value = "20"/>
+<parameter name = "cpmprice" value = "1"/>
+<parameter name = "dailyimps" value = "10"/>
+<parameter name = "scriptcode" value = "testtest"/>
+<parameter name = "remarkcode" value = "testremark"/>
+<parameter name = "cpcprice" value = "10" />
+<parameter name = "retargetingcode1" value = "selfretargetingcode1"/>
+<parameter name = "retargetingcode2" value = "selfretargetingcode2"/>
+<parameter name = "conversioncode1" value = "selfconversioncode1"/>
+<parameter name = "conversioncode2" value = "selfconversioncode2"/>
+
+<parameter name = "arriveadress" value = "http://www.baidu.com"/>
+<parameter name = "monitoraddress" value = "http://www.monitor.com"/>
+<parameter name = "exposureaddress" value = "http://www.exposure.com"/>
+<parameter name = "theme" value = "SelfUploadCreative" />
+<parameter name = "dsppath" value="E:\360Downloads\self\self.jpg" />
+
+
+<parameter name = "browser" value = "chrome" />
+
+
+
+
+<!-- <test name = "codecenter function" preserve-order="true"> -->
+<!-- <classes> -->
+<!-- <class name="com.ipinyou.testcase.codecenter.CodeCenter"> -->
+<!--  <methods> -->
+<!--                     <include name="login" />  -->
+<!--                     <include name="codecenter" />  -->
+<!--                     <include name="createcategory" />                      -->
+<!--                     <include name="createpageconversion" />  -->
+<!--                     <include name="createcategory1" />  -->
+<!--                     <include name="createpageconversion1" />  -->
+                    
+                    
+                                        
+<!-- </methods> -->
+<!-- </class> -->
+<!-- </classes> -->
+
+<test name = "order function" preserve-order="true">
+<classes>
+<class name = "com.ipinyou.testcase.selfadvertiser.Order">
+<methods>
+                    <include name="login" />     
+                    <include name="searchad" /> 
+                    <include name ="createorder"/>
+                    <include name = "check" />
+</methods>
+</class>
+</classes>
+</test>
+
+<test name="plan function" preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.selfadvertiser.Plan">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name = "inplan"/>
+      <include name = "createplan"/>
+      <include name = "check" />
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+   <test name="strategy function"  preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.selfadvertiser.Strategy">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name = "instrategy"/>
+      <include name = "createstrategy"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="creative function" preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.selfadvertiser.Creative">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name ="increative"/>
+      <include name ="selcreative"/>
+      <include name = "completecreative"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name = "openstatus function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.selfadvertiser.OpenStatus">
+ <methods>
+                    <include name="login" />   
+                    <include name="openstatus" />                     
+</methods>
+</class>
+</classes>
+</test>
+</suite>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="staclickurl" value="http://www.baidu.com/"/>
+  <parameter name="impresslog" value="impression"/>
+  <parameter name="loginname" value="xuchong@ipinyou.com"/>
+  <parameter name="staexposeurl" value="http://www.hao123.com/"/>
+  <parameter name="statisticstrategy" value="statisticstrategy"/>
+  <parameter name="clicklog" value="click"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="orname" value="AutoOrder"/>
+  <parameter name="password" value="aaaaaa"/>
+  <parameter name="adname" value="autoadvertiser"/>
+  <parameter name="plname" value="AutoPlan"/>
+  <test name="StatisticsStrateg function(failed)">
+    <classes>
+      <class name="com.ipinyou.testcase.dsp.CheckStatisticsStrategy">
+        <methods>
+          <include name="checkImpressuri"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.ipinyou.testcase.dsp.CheckStatisticsStrategy -->
+    </classes>
+  </test> <!-- StatisticsStrateg function(failed) -->
+</suite> <!-- Failed suite [Suite] -->

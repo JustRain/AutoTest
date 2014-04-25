@@ -1,0 +1,14 @@
+<suite name = "test" verbose = "2">
+
+<parameter name = "browser" value = "firefox" />
+
+<test name = "ownmediaput function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.put.OwnMediaPut">
+ <methods>
+                    <include name="ownmediaput" />                        
+</methods>
+</class>
+</classes>
+</test>
+</suite>

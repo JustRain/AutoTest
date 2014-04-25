@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "orname" value = "AutoOrder"/>
+
+<parameter name = "delplan" value = "DelPlan"/>
+<parameter name = "totalbudget" value = "100"/>
+<parameter name = "newbegindate" value = "2014/4/14" />
+<parameter name = "newenddate" value = "2014/4/20" />
+<parameter name = "browser" value = "chrome" />
+
+
+  <test name="Test">
+    <classes>
+      <class name="com.ipinyou.testcase.batch.BatchDelPlan"/>
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name = "inplan"/>
+      <include name = "createplan"/>
+      <include name = "check" />
+      <include name = "delplan" />
+      <include name = "datacheck" />
+      
+      </methods>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

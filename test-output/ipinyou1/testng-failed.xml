@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="2" name="Failed suite [ipinyou1]">
+  <parameter name="loginname" value="xuchong@ipinyou.com"/>
+  <parameter name="ordername" value="AutoOrder"/>
+  <parameter name="contractNo" value="NO001"/>
+  <parameter name="orderbudget" value="100"/>
+  <parameter name="password" value="aaaaaa"/>
+  <parameter name="adname" value="autoadvertiser"/>
+  <test name="order function(failed)">
+    <classes>
+      <class name="com.ipinyou.testcase.Order">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="searchad" invocation-numbers="0"/>
+          <include name="createorder" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.ipinyou.testcase.Order -->
+    </classes>
+  </test> <!-- order function(failed) -->
+</suite> <!-- Failed suite [ipinyou1] -->

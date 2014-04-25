@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="2" name="Failed suite [all]">
+  <parameter name="password" value="aaaaaa"/>
+  <parameter name="loginname" value="xuchong@ipinyou.com"/>
+  <parameter name="advertisername" value="autoadvertiser"/>
+  <parameter name="contactname" value="test联系人"/>
+  <parameter name="email" value="test@ipinyou.com"/>
+  <parameter name="registername" value="testCompany"/>
+  <parameter name="advertiserwebsite" value="http://www.test.com"/>
+  <parameter name="cellphone" value="13800138000"/>
+  <parameter name="ordername" value="AutoOrder"/>
+  <parameter name="contractNo" value="NO001"/>
+  <parameter name="path" value="E:\\Eclipse workspace\\{CB4F4C01-3548-4480-9BD6-F94DEF82F568}.jpg"/>
+  <parameter name="orderbudget" value="100"/>
+  <parameter name="adname" value="autoadvertiser"/>
+  <test name="all function(failed)">
+    <classes>
+      <class name="com.ipinyou.testcase.Advertiser">
+        <methods>
+          <include name="login"/>
+          <include name="createad"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.ipinyou.testcase.Advertiser -->
+      <class name="com.ipinyou.testcase.Order">
+        <methods>
+          <include name="login"/>
+          <include name="searchad"/>
+          <include name="createorder"/>
+        </methods>
+      </class> <!-- com.ipinyou.testcase.Order -->
+    </classes>
+  </test> <!-- all function(failed) -->
+</suite> <!-- Failed suite [all] -->

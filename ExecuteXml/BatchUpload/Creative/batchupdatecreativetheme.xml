@@ -1,0 +1,27 @@
+<suite name = "test" verbose = "2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "orname" value = "AutoOrder"/>
+<parameter name = "plname" value = "AutoPlan"/>
+<parameter name = "strname" value = "BatchStrategyDsp" />
+<parameter name = "creativetheme" value = "updatebatchcreative" />
+<parameter name = "creativethemerecover" value = "batchcreative" />
+
+<parameter name = "browser" value = "firefox" />
+
+<test name = "batchupdatecreativetheme.xml function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.BatchUpdateCreativeTheme">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name = "batchupdatecreativetheme" />
+                    <include name = "check" />
+                    <include name = "recover" />
+                                                                                                      
+</methods>
+</class>
+</classes>
+</test>
+</suite>

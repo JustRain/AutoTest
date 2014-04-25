@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="2" name="Failed suite [testput]">
+  <parameter name="filepath" value="D:\\website\\web1.html"/>
+  <parameter name="text1" value="奢侈品"/>
+  <parameter name="text2" value="奢侈品"/>
+  <parameter name="arriveadress" value="http://www.baidu.com"/>
+  <parameter name="password" value="aaaaaa"/>
+  <parameter name="strategyname" value="AutoStrategyOmediaPut"/>
+  <parameter name="loginname" value="xuchong@ipinyou.com"/>
+  <parameter name="searchname" value="ownmediacreative"/>
+  <parameter name="websuit" value="autowebsite"/>
+  <parameter name="ownmediatheme" value="ownmediacreative"/>
+  <parameter name="orname" value="AutoOrder"/>
+  <parameter name="part" value="autopart"/>
+  <parameter name="channel" value="autochannel"/>
+  <parameter name="plname" value="AutoPlan"/>
+  <parameter name="adname" value="autoadvertiser"/>
+  <test name="downscript function(failed)">
+    <classes>
+      <class name="com.ipinyou.testcase.ownmedia.OwnMediaCreative">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.ipinyou.testcase.ownmedia.OwnMediaCreative -->
+      <class name="com.ipinyou.testcase.ownmedia.OwnMediaStatus">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.ipinyou.testcase.ownmedia.OwnMediaStatus -->
+      <class name="com.ipinyou.testcase.ownmedia.OwnMediaStrategy">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.ipinyou.testcase.ownmedia.OwnMediaStrategy -->
+      <class name="com.ipinyou.testcase.ownmedia.DownScript">
+        <methods>
+          <include name="afterTest"/>
+          <include name="downscript"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.ipinyou.testcase.ownmedia.DownScript -->
+    </classes>
+  </test> <!-- downscript function(failed) -->
+</suite> <!-- Failed suite [testput] -->

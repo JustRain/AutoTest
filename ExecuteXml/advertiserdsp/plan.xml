@@ -1,0 +1,32 @@
+<suite name="ipinyou1" verbose="2">
+<parameter name = "loginname" value = "autotest@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "ordername" value = "autoorder"/>
+<parameter name = "planname" value = "autoplan"/>
+<parameter name = "totalbudget" value = "100"/>
+<parameter name = "dailybudget" value = "50"/>
+<parameter name = "totallimitexposure" value = "100"/>
+<parameter name = "totallimitclick" value = "100000"/>
+<parameter name = "dailylimitexposure" value = "50"/>
+<parameter name = "dailylimitclick" value = "1000"/>
+<parameter name = "planlimitexposure" value = "50"/>
+<parameter name = "planlimitclick" value = "1000"/>
+<parameter name = "creativelimitexposure" value = "5000"/>
+<parameter name = "creativdelimitclick" value = "5000"/>
+
+
+
+
+
+<test name = "plan function" preserve-order="true">
+<classes>
+<class name = "com.ipinyou.testcase.advertiserdsp.Plan">
+<methods>
+                    <include name="login" />     
+                   <include name ="search"/>
+                    <include name ="createplan"/>
+</methods>
+</class>
+</classes>
+</test>
+</suite>

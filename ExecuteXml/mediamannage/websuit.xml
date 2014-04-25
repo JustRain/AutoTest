@@ -1,0 +1,25 @@
+<suite name="ipinyou" verbose="2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "channelname" value = "autochannel"/>
+<parameter name = "websuit" value = "autowebsite"/>
+<parameter name = "webdomain" value = "http://www.ipinyou.com.cn/"/>
+<parameter name = "contact" value = "autotester"/>
+<parameter name = "email" value = "autotest@ipinyou.com"/>
+<parameter name = "cellphone" value = "13800138000"/>
+
+<parameter name = "browser" value = "firefox" />
+
+
+    <test name="websuit function" preserve-order="true">  
+        <classes>
+            <class name="com.ipinyou.testcase.mediamannage.WebSuit">
+                <methods>
+                    <include name="login" />     
+                    <include name="switchmedia" /> 
+                     <include name="websuit" /> 
+                </methods>
+            </class>  
+        </classes>
+    </test>
+</suite>

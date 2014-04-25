@@ -1,0 +1,74 @@
+<suite name = "test" verbose = "2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "orname" value = "AutoOrder"/>
+<parameter name = "plname" value = "AutoPlan"/>
+<parameter name = "pyidcategories" value = "test"/>
+<parameter name = "blacklists" value = "http://www.webtestblack.com"/>
+<parameter name = "whitelists" value = "http://www.webtestwhite.com"/>
+<parameter name = "webstrname" value = "AutoStrategyMobWeb"/>
+<parameter name = "appstrname" value = "AutoStrategyMobApp"/>
+
+<parameter name = "peopleproperty" value = "人口属性 > 性别 > 女性"/>
+<parameter name = "retartext" value = "全站访客"/>
+<parameter name = "classfytext" value = "retargetingcode1、"/>
+<parameter name = "context" value = "conversioncode1、"/>
+<parameter name = "peopletext" value = "不限"/>
+<parameter name = "cookietext" value = "testcookie"/>
+<parameter name = "areatext" value = "全国"/>
+<parameter name = "platetext" value = "谷歌移动"/>
+<parameter name = "ostext" value = "4.4、4.3、4.2、4.1、4.0、3.2、3.0、2.3、2.2、2.1、2.0、1.6、1.5、1.1、1.0、0.5"/>
+<parameter name = "browsertext" value = "IE6、IE7、IE8、IE9、IE10、Chrome、Firefox、Safari、Opera、遨游、TheWorld、Sogou、Baidu、猎豹、QQ、360、其它"/>
+<parameter name = "browser" value = "chrome" />
+<parameter name = "batchblack" value = "batchblack" />
+<parameter name = "batchwhite" value = "batchwhite" />
+
+
+<parameter name = "classifyexclude" value = "retargetingcode2、"/>
+<parameter name = "conexclude" value = "conversioncode2、" />
+<parameter name = "clicksele" value = "点击过本广告主广告" />
+<parameter name = "peopclassfy" value = "autotest、autotest、autotest" />
+
+<parameter name = "mobiletype" value="web" />
+<parameter name = "batchdirected" value="batchdirected" />
+<parameter name = "blackapp" value="blackapp" />
+<parameter name = "whiteapp" value="whiteapp" />
+
+<parameter name = "positonblack" value="whiteapp" />
+<parameter name = "positionwhite" value="whiteapp" />
+<parameter name = "daatexclude" value="人口属性 > 关键人生阶段 > 求职时期" />
+<parameter name = "mobiledevice" value="苹果、三星、HTC、诺基亚、摩托罗拉、索尼、华为、联想、魅族、小米、其他" />
+<parameter name = "apptype" value="1" />
+<parameter name = "mediumblack" value="1" />
+<parameter name = "mediumwhite" value="1" />
+
+
+<parameter name = "batchappwhitelistold" value = "whiteapp" />
+<parameter name = "batchappblacklistold" value = "blackapp" />
+<parameter name = "edithighprice" value = "10.00" />
+<parameter name = "editpricegoal" value = "到达单价" />
+<parameter name = "unitcpc" value = "5.00" />
+<parameter name = "editeffectgoal" value = "点击率" />
+<parameter name = "editrate" value = "1" />
+<parameter name = "editscriptcode" value = "editalgo=editares" />
+<parameter name = "editremark" value = "editremark" />
+<parameter name = "editblanceputin" value = "每日预算均匀" />
+<parameter name = "editpreferdeal" value = "editPreferDeal1,editPreferDeal2" />
+<parameter name = "editalgorithmCode" value = "哈迪斯" />
+<parameter name = "editreachprice" value = "reach=5.00" />
+
+
+<test name = "batcheditmobstrategyapp function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.Mobile.BatchEditStrategyMobWeb">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name="batchedit" />      
+                    <include name = "check" />                                                                                    
+</methods>
+</class>
+</classes>
+</test>
+</suite>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "test" verbose="2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "orname" value = "AutoOrder"/>
+<parameter name = "plname" value = "AutoPlan"/>
+
+<!-- batchedit data -->
+<parameter name = "pyidcategories" value = "test"/>
+<parameter name = "blacklists" value = "http://www.apptest.com"/>
+<parameter name = "whitelists" value = "http://www.webtestwhite.com"/>
+<parameter name = "appstrname" value = "AutoStrategyMobApp"/>
+<parameter name = "webstrname" value = "AutoStrategyMobWeb"/>
+<parameter name = "batchwhite" value = "batchwhite" />
+
+ <parameter name = "peopleproperty" value = "人口属性 > 性别 > 女性"/>
+<parameter name = "retartext" value = "全站访客"/>
+<parameter name = "classfytext" value = "retargetingcode1、"/>
+<parameter name = "context" value = "conversioncode1、"/>
+<parameter name = "peopletext" value = "不限"/>
+<parameter name = "cookietext" value = "testcookie"/>
+<parameter name = "areatext" value = "全国"/>
+<parameter name = "platetext" value = "谷歌移动"/>
+<parameter name = "ostext" value = "4.4、4.3、4.2、4.1、4.0、3.2、3.0、2.3、2.2、2.1、2.0、1.6、1.5、1.1、1.0、0.5"/>
+<parameter name = "browsertext" value = "IE6、IE7、IE8、IE9、IE10、Chrome、Firefox、Safari、Opera、遨游、TheWorld、Sogou、Baidu、猎豹、QQ、360、其它"/>
+<parameter name = "batchblack" value = "batchblack" />
+
+<parameter name = "classifyexclude" value = "retargetingcode2、"/>
+<parameter name = "conexclude" value = "conversioncode2、" />
+<parameter name = "clicksele" value = "点击过本广告主广告" />
+<parameter name = "peopclassfy" value = "autotest、autotest、autotest" />
+
+<parameter name = "batchdirected" value="batchdirected" />
+<parameter name = "blackapp" value="blackapp" />
+<parameter name = "whiteapp" value="whiteapp" />
+
+<parameter name = "positonblack" value="whiteapp" />
+<parameter name = "positionwhite" value="whiteapp" />
+<parameter name = "daatexclude" value="人口属性 > 关键人生阶段 > 求职时期" />
+<parameter name = "mobiledevice" value="苹果、三星、HTC、诺基亚、摩托罗拉、索尼、华为、联想、魅族、小米、其他" />
+<parameter name = "apptype" value="1" />
+<parameter name = "mediumblack" value="2" />
+<parameter name = "mediumwhite" value="2" />
+
+<parameter name = "batchappwhitelistold" value = "whiteapp" />
+<parameter name = "batchappblacklistold" value = "blackapp" />
+<parameter name = "edithighprice" value = "10.00" />
+<parameter name = "editpricegoal" value = "到达单价" />
+<parameter name = "unitcpc" value = "5.00" />
+<parameter name = "editeffectgoal" value = "点击率" />
+<parameter name = "editrate" value = "1" />
+<parameter name = "editscriptcode" value = "editalgo=editares" />
+<parameter name = "editremark" value = "editremark" />
+<parameter name = "editblanceputin" value = "每日预算均匀" />
+<parameter name = "editpreferdeal" value = "editPreferDeal1,editPreferDeal2" />
+<parameter name = "editalgorithmCode" value = "哈迪斯" />
+<parameter name = "editreachprice" value = "reach=5.00" />
+
+<!-- 批量修改黑白名单 -->
+<parameter name = "batchappwhitelist" value = "batchappwhitelist" />
+<parameter name = "batchappblacklist" value = "batchappblacklist" />
+<parameter name = "batchwebblackname" value = "batchwebblackname" />
+<parameter name = "batchwebwhitename" value = "batchwebwhitename" />
+<parameter name = "batchwebblackurl" value = "http://www.batchwebblackname.com" />
+<parameter name = "batchwebwhiteurl" value = "http://www.batchwebwhitename.com" />
+
+<!-- 批量复制 -->
+
+<parameter name = "plname1" value = "BatchAutoPlan" />
+<parameter name = "copystr1" value="AutoStrategyMobApp-复本" />
+<parameter name = "copystr2" value="AutoStrategyMobWeb-复本" />
+
+<!-- 新建外部计划 -->
+<parameter name = "mobilebatchplan" value = "BatchAutoPlan"/>
+<parameter name = "totalbudget" value = "100"/>
+<parameter name = "dailybudget" value = "50"/>
+<parameter name = "imptotallimit" value = "100"/>
+<parameter name = "clickTotalLimit" value = "100000"/>
+<parameter name = "imdailylimit" value = "50"/>
+<parameter name = "clickdailylimit" value = "50000"/>
+<parameter name = "campaignindvdlimitimplimit" value = "100"/>
+<parameter name = "campaignindvdlimitclicklimit" value = "10"/>
+<parameter name = "creativeindvdlimitimplimit" value = "10"/>
+<parameter name = "creativeindvdlimitclicklimit" value = "10"/>
+<parameter name = "statecoefficient" value = "5%"/>
+<parameter name = "KPI1" value = "1"/>
+<parameter name = "KPI2" value = "5"/>
+<parameter name = "coverpoint" value = "点击转化"/>
+
+<!-- 批量上传创意 -->
+
+<parameter name = "webcreaname" value = "batchcreativeweb"/>
+<parameter name = "arriveadress" value = "http://www.baidu.com"/>
+<parameter name = "monitoraddress" value = "http://www.monitor.com"/>
+<parameter name = "exposureaddress" value = "http://www.exposure.com"/>
+<parameter name = "batchwebpath" value = "E:\360Downloads\batchweb.jpg" />
+<parameter name = "batchapppath" value = "E:\360Downloads\batchapp.jpg" />
+<parameter name = "appcreaname" value = "batchcreativeapp"/>
+
+<parameter name = "browser" value = "chrome" />
+
+
+<test name = "batcheditmobstrategyapp function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.Mobile.BatchEditStrategyMobApp">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name="batchedit" />      
+                    <include name = "check" />                                                                                    
+</methods>
+</class>
+</classes>
+</test>
+
+<test name = "batcheditmobstrategyweb function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.Mobile.BatchEditStrategyMobWeb">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name="batchedit" />      
+                    <include name = "check" />                                                                                    
+</methods>
+</class>
+</classes>
+</test>
+
+<test name = "batchaddblacklistweb function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.Mobile.BatchAddBlacklistMobWeb">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name="batchaddblacklist" />    
+                    <include name="check" />                     
+                                     
+                                                                                           
+</methods>
+</class>
+</classes>
+</test>
+
+<test name = "batchaddblacklistapp function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.Mobile.BatchAddBlacklistMobApp">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name="batchaddblacklist" />    
+                    <include name="check" />                     
+                                     
+                                                                                           
+</methods>
+</class>
+</classes>
+</test>
+
+
+  <test name="batchmobplan" preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.dsp.BatchMobPlan">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name = "inplan"/>
+      <include name = "createplan"/>
+      <include name = "check" />
+      </methods>
+      </class>
+    </classes>
+  </test> 
+
+<test name = "batchcopystrategymobapp function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.Mobile.BatchCopyStrategyMobApp">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name = "batchcopy" />
+                    <include name = "check" />                                                                  
+</methods>
+</class>
+</classes>
+</test>
+
+<test name = "batchcopystrategymobweb function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.Mobile.BatchCopyStrategyMobWeb">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name = "batchcopy" />
+                    <include name = "check" />                                                                  
+</methods>
+</class>
+</classes>
+</test>
+
+<test name = "batchuploadcreativeapp function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.Mobile.BatchUploadCreativeApp">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name="batchupload" />  
+                    <include name = "check" />                   
+                                                                                                      
+</methods>
+</class>
+</classes>
+</test>
+
+<test name = "batchuploadcreativeweb function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.Mobile.BatchUploadCreativeWeb">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name="batchupload" />  
+                    <include name = "check" />                   
+                                                                                                      
+</methods>
+</class>
+</classes>
+</test>
+
+</suite>

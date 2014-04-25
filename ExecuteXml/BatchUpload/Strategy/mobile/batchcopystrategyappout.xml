@@ -1,0 +1,62 @@
+<suite name = "test" verbose = "2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "orname" value = "AutoOrder"/>
+<parameter name = "plname" value = "AutoPlan"/>
+<parameter name = "strname" value = "AutoStrategyMobApp" />
+<parameter name = "plname1" value = "BatchAutoPlan" />
+
+<parameter name = "copystr1" value="AutoStrategyMobApp-复本" />
+<parameter name = "copystr2" value="AutoStrategyMobWeb-复本" />
+<parameter name = "mobiletype" value = "app" />
+<parameter name = "browser" value = "chrome" />
+
+
+<parameter name = "positonblack" value="whiteapp" />
+<parameter name = "positionwhite" value="whiteapp" />
+<parameter name = "daatexclude" value="人口属性 > 关键人生阶段 > 求职时期" />
+<parameter name = "mobiledevice" value="苹果、三星、HTC、诺基亚、摩托罗拉、索尼、华为、联想、魅族、小米、其他" />
+<parameter name = "apptype" value="1" />
+<parameter name = "mediumblack" value="2" />
+<parameter name = "mediumwhite" value="2" />
+
+<parameter name = "batchdirected" value="batchdirected" />
+<parameter name = "blackapp" value="blackapp" />
+<parameter name = "whiteapp" value="whiteapp" />
+
+<parameter name = "peopleproperty" value = "人口属性 > 性别 > 女性"/>
+<parameter name = "classfytext" value = "retargetingcode1、"/>
+<parameter name = "context" value = "conversioncode1、"/>
+
+<parameter name = "areatext" value = "全国"/>
+<parameter name = "platetext" value = "谷歌移动"/>
+<parameter name = "ostext" value = "4.2、4.1、4.0、3.2、3.0、2.3、2.2、2.1、2.0、1.6、1.5、1.1、1.0、0.5"/>
+
+<parameter name = "batchblack" value = "batchblack" />
+<parameter name = "batchwhite" value = "batchwhite" />
+
+
+<parameter name = "classifyexclude" value = "retargetingcode2、"/>
+<parameter name = "conexclude" value = "conversioncode2、" />
+<parameter name = "clicksele" value = "点击过本广告主广告" />
+<parameter name = "batchappwhitelist" value = "batchappwhitelist" />
+<parameter name = "batchappblacklist" value = "batchappblacklist" />
+
+<parameter name = "batchappwhitelistold" value = "whiteapp" />
+<parameter name = "batchappblacklistold" value = "blackapp" />
+
+
+<test name = "batchcopystrategymobappput function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.Mobile.BatchCopyStrategyMobOut">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name = "batchcopy" />
+                    <include name = "check" />                                                                  
+</methods>
+</class>
+</classes>
+</test>
+</suite>

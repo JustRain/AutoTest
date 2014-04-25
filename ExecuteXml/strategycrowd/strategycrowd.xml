@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "orname" value = "AutoOrder"/>
+<parameter name = "plname" value = "AutoPlan"/>
+<parameter name = "strategyname" value = "AutoStrategyDsp"/>
+<parameter name = "retargetingcode1" value = "retargetingcode1"/>
+<parameter name = "retargetingcode2" value = "retargetingcode2"/>
+<parameter name = "conversioncode1" value = "conversioncode1"/>
+<parameter name = "conversioncode2" value = "conversioncode2"/>
+<parameter name = "budgetblance" value = "每日预算均匀" />
+<parameter name = "exposureblance" value = "每日曝光均匀" />
+<parameter name = "budgetreminder" value = "选择每日预算均匀，每日预算必填且不低于50元" />
+<parameter name = "exposurereminder" value = "选择每日曝光均匀，每日曝光上限必填且不低于50CPM" />
+<parameter name = "begindate" value = "2014/03/16" />
+<parameter name = "enddate" value = "2014/04/30" />
+<parameter name = "oldbegindate" value = "2014/3/30" />
+<parameter name = "oldenddate" value = "2014/4/5" />
+<parameter name = "begindate1" value = "2014/3/30" />
+<parameter name = "enddate1" value = "2014/4/5" />
+
+<parameter name = "browser" value = "chrome" />
+
+
+  <test name="strategycrowd function"  preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.dsp.strategy.StrCrowdMutex">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name = "instrategy"/>
+      <include name = "crowdmutex"/>
+      <include name = "visitorcrowd"/>
+      <include name = "visitorupdate"/>
+      <include name = "blanceputin"/>
+<!--       <include name = "datecrowd" /> -->
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

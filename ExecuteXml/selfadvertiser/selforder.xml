@@ -1,0 +1,25 @@
+<suite name="ipinyou" verbose="2">
+<parameter name = "loginname" value = "selfautotest@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "selfautoadvertiser"/>
+<parameter name = "orname" value = "SelfAutoOrder"/>
+<parameter name = "orderbudget" value = "100"/>
+<parameter name = "contractNo" value = "NO001"/>
+<parameter name = "browser" value = "chrome" />
+<parameter name = "KPI1" value = "1"/>
+<parameter name = "KPI2" value = "5"/>
+<parameter name = "coverpoint" value = "点击转化"/>
+
+<test name = "order function" preserve-order="true">
+<classes>
+<class name = "com.ipinyou.testcase.selfadvertiser.Order">
+<methods>
+                    <include name="login" />     
+                    <include name="searchad" /> 
+                    <include name ="createorder"/>
+                    <include name = "check" />
+</methods>
+</class>
+</classes>
+</test>
+</suite>

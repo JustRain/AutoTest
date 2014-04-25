@@ -1,0 +1,30 @@
+<suite name = "test" verbose = "2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "orname" value = "AutoOrder"/>
+<parameter name = "plname" value = "AutoPlan"/>
+<parameter name = "webstrname" value = "AutoStrategyMobWeb" />
+<parameter name = "webcreaname" value = "batchcreativeweb"/>
+<parameter name = "arriveadress" value = "http://www.baidu.com"/>
+<parameter name = "monitoraddress" value = "http://www.monitor.com"/>
+<parameter name = "exposureaddress" value = "http://www.exposure.com"/>
+<parameter name = "batchwebpath" value = "E:\360Downloads\batchweb.jpg" />
+
+<parameter name = "browser" value = "chrome" />
+
+
+<test name = "batchuploadcreativeweb function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.batch.Mobile.BatchUploadCreativeWeb">
+ <methods>
+                    <include name="login" />   
+                    <include name="search" />     
+                    <include name="batchupload" />  
+                    <include name = "check" />                   
+                                                                                                      
+</methods>
+</class>
+</classes>
+</test>
+</suite>

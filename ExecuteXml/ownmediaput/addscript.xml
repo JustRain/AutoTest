@@ -1,0 +1,21 @@
+<suite name="ipinyou" verbose="2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "name" value = "autocode1"/>
+<parameter name = "rcode" value = "0"/>
+<parameter name = "cname" value = "autocode2"/>
+<parameter name = "conrecode" value = "1"/>
+<parameter name = "browser" value = "firefox" />
+
+
+    <test name="advertiser function" preserve-order="true">  
+        <classes>
+            <class name="com.ipinyou.testcase.AddScript">
+                <methods>
+                    <include name="login" />     
+                    <include name = "incodecenter"/>
+                </methods>
+            </class>  
+        </classes>
+    </test>
+</suite>

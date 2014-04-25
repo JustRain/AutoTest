@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "orname" value = "AutoOrder"/>
+<parameter name = "plname" value = "AutoPlan"/>
+<parameter name = "mobappstrategyname" value = "AutoStrategyMobApp"/>
+<parameter name = "level" value = "15"/>
+<parameter name = "browser" value = "chrome" />
+
+<parameter name = "retargetingcode1" value = "retargetingcode1"/>
+<parameter name = "retargetingcode2" value = "retargetingcode2"/>
+<parameter name = "conversioncode1" value = "conversioncode1"/>
+<parameter name = "conversioncode2" value = "conversioncode2"/>
+
+<parameter name = "tbudget" value = "100"/>
+<parameter name = "dbudget" value = "50"/>
+<parameter name = "imptlimit" value = "100"/>
+<parameter name = "ctclick" value = "100000"/>
+<parameter name = "impdlimit" value = "50"/>
+<parameter name = "cdlimit" value = "50000"/>
+<parameter name = "indlimit" value = "100"/>
+<parameter name = "indvdcllimit" value = "10"/>
+<parameter name = "beijing" value = "北京"/>
+
+
+<parameter name = "blackname" value = "mobileblack" />
+<parameter name = "whitename" value = "mobilewhite" />
+<parameter name = "blacklist" value = "http://www.mobileblack.com" />
+<parameter name = "whitelist" value = "http://www.mobilewhite.com" />
+<parameter name = "posblack" value = "blackposition" />
+<parameter name = "poswhite" value = "whiteposition" />
+<parameter name = "appblack" value = "blackapp" />
+<parameter name = "appwhite" value = "whiteapp" />
+<parameter name = "directed" value="mobiledirected" />
+
+
+<parameter name = "daatselect" value = "人口属性 > 性别 > 男性" />
+<parameter name = "attention" value = "高" />
+<parameter name = "daatexclude" value = "人口属性 > 关键人生阶段 > 学生时期" />
+<parameter name = "retargetclassify" value = "retargetingcode2、" />
+<parameter name = "retargetconversion" value = "conversioncode2、" />
+<parameter name = "retargetexclude" value = "retargetingcode1、" />
+<parameter name = "conversionexclude" value = "conversioncode1、" />
+<parameter name = "clickcookie" value = "点击过广告" />
+<parameter name = "area" value = "34" />
+<parameter name = "time" value = "12:00 ~ 17:59    12:00 ~ 17:59   " />
+<parameter name = "plate" value = "Amx,Inmobi,Mogo,Smaato,Tanx,Youku" />
+<parameter name = "os" value = "Android,IOS,WindowsPhone,Other" />
+<parameter name = "device" value = "Cellphone,Pad,MobileOther" />
+<parameter name = "apptype" value = "28" />
+<parameter name = "mobilenet" value = "" />
+<parameter name = "appblick" value = "blackapp" />
+<parameter name = "appwhite" value = "whiteapp" />
+<parameter name = "uncheat" value = "" />
+<parameter name = "putin" value = "每日曝光均匀" />
+<parameter name = "flow" value = "" />
+<parameter name = "preferdeal" value = "preferDeal1,preferDeal2" />
+<parameter name = "highprice" value = "20.00" />
+<parameter name = "arithmetic" value = "哈迪斯" />
+<parameter name = "pricegoal" value = "转化单价" />
+<parameter name = "unitprice" value = "10" />
+<parameter name = "checkunitprive" value = "convert=10" />
+<parameter name = "effectgoal" value = "到达率" />
+<parameter name = "effectrate" value = "80" />
+<parameter name = "scriptcode" value = "algo=ares" />
+<parameter name = "remark" value = "reamrk" />
+
+
+  <test name="mobileappstrategy function"  preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.mobile.MobileAppStrategy">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name = "instrategy"/>
+      <include name = "mobilestrategy"/>
+      <include name = "check"/>
+      
+      </methods>
+      </class>
+    </classes>
+  </test> 
+</suite> 

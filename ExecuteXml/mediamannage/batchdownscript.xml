@@ -1,0 +1,24 @@
+<suite name="ipinyou" verbose="2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "channelname" value = "autochannel"/>
+<parameter name = "websuit" value = "autowebsite"/>
+<parameter name = "partname" value = "autopart"/>
+<parameter name = "filepath" value = "C:\\Users\\Administrator\\AppData\\Local\\Temp\\AdUnitCode.zip" />
+
+<parameter name = "browser" value = "firefox" />
+
+    <test name="batchdownscript function" preserve-order="true">  
+        <classes>
+            <class name="com.ipinyou.testcase.mediamannage.BatchDownScript">
+                <methods>
+                    <include name="login" />     
+                    <include name="switchmedia" /> 
+                    <include name = "batchdown" />
+                    <include name = "check" />
+                    <include name = "recover" />
+                </methods>
+            </class>  
+        </classes>
+    </test>
+</suite>

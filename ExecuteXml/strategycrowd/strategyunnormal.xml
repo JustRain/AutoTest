@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "orname" value = "AutoOrder"/>
+
+<parameter name = "alorplname" value = "AlgorithmPlan"/>
+<parameter name = "totalbudget" value = "100"/>
+<parameter name = "newbegindate" value = "2014/4/20" />
+<parameter name = "newenddate" value = "2014/4/25" />
+
+<parameter name = "algostrategyname" value = "AlgorithmStrategy" />
+<parameter name = "algorithm" value = "企鹅" />
+<parameter name = "highprice" value = "10" />
+<parameter name = "pricegoal" value = "CPC单价" />
+<parameter name = "unitprice" value = "5" />
+<parameter name = "editalgorithm" value = "低价算法(lowprice)" />
+<parameter name = "edithigh" value = "11" />
+<parameter name = "editpricegoal" value = "到达单价" />
+<parameter name = "editunitprice" value = "6" />
+<parameter name = "copystrategyname" value = "AlgorithmStrategy-复本" />
+<parameter name = "plname" value = "AutoPlan" />
+<parameter name = "copyalgorithm" value = "逸动" />
+<parameter name = "othercopyalgorithm" value = "克劳德" />
+<parameter name = "cpcunit" value = "cpc=0.5" />
+
+<parameter name = "sechighprice" value = "15.00" />
+<parameter name = "secalgorithm" value = "弗思特" />
+<parameter name = "secunitprice" value = "5" />
+<parameter name = "secunitpricevalue" value = "cpc=5" />
+
+<parameter name = "plname" value = "AutoPlan"/>
+<parameter name = "strategyname" value = "AutoStrategyDsp"/>
+<parameter name = "retargetingcode1" value = "retargetingcode1"/>
+<parameter name = "retargetingcode2" value = "retargetingcode2"/>
+<parameter name = "conversioncode1" value = "conversioncode1"/>
+<parameter name = "conversioncode2" value = "conversioncode2"/>
+<parameter name = "budgetblance" value = "每日预算均匀" />
+<parameter name = "exposureblance" value = "每日曝光均匀" />
+<parameter name = "budgetreminder" value = "选择每日预算均匀，每日预算必填且不低于50元" />
+<parameter name = "exposurereminder" value = "选择每日曝光均匀，每日曝光上限必填且不低于50CPM" />
+<parameter name = "begindate" value = "2014/03/16" />
+<parameter name = "enddate" value = "2014/04/30" />
+<parameter name = "oldbegindate" value = "2014/3/30" />
+<parameter name = "oldenddate" value = "2014/4/5" />
+<parameter name = "begindate1" value = "2014/3/30" />
+<parameter name = "enddate1" value = "2014/4/5" />
+
+
+<parameter name = "browser" value = "chrome" />
+
+
+
+  <test name="AlgorithmPlan function" preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.dsp.strategy.AlgorithmPlan">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name = "inplan"/>
+      <include name = "createplan"/>
+      <include name = "check" />
+      </methods>
+      </class>
+    </classes>
+  </test> 
+  
+  <test name="AlgorithmStrategy function"  preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.dsp.strategy.AlgorithmStrategy">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name = "instrategy"/>
+      <include name = "createstrtegy"/>
+      <include name = "firstcheck" />
+      <include name = "firstedit" />
+      <include name = "firsteditcheck" />
+      <include name = "secondeditstr" />
+      <include name = "secondeditcheck" />
+      <include name = "openstatus" />
+      <include name = "secondcheck" />
+      <include name = "copystr" />
+      <include name = "editcopystr" />
+      <include name = "editcopycheck" />
+      <include name = "othereditcopystr" />
+      <include name = "othereditcopycheck" />
+      
+      
+      </methods>
+      </class>
+    </classes>
+  </test> 
+  
+  
+  
+   <test name="strategycrowd function"  preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.dsp.strategy.StrCrowdMutex">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name = "instrategy"/>
+      <include name = "crowdmutex"/>
+      <include name = "visitorcrowd"/>
+      <include name = "visitorupdate"/>
+      <include name = "blanceputin"/>
+<!--       <include name = "datecrowd" /> -->
+      </methods>
+      </class>
+    </classes>
+  </test> 
+</suite> 

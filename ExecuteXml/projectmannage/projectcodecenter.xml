@@ -1,0 +1,36 @@
+<suite name = "test" verbose = "2">
+<parameter name = "loginname" value = "autoproject@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "advname" value = "projectautoadvertiser"/>
+<parameter name = "catename" value = "projectretargetingcode1"/>
+<parameter name = "catevalue" value = "5"/>
+<parameter name = "catename1" value = "projectretargetingcode2"/>
+<parameter name = "catevalue1" value = "6"/>
+<parameter name = "conname" value = "projectconversioncode1"/>
+<parameter name = "conname1" value = "projectconversioncode2"/>
+<parameter name = "agentname" value = "自动化代理商" />
+<parameter name = "advertisername" value = "autoadvertiser" />
+
+<parameter name = "browser" value = "chrome" />
+
+
+
+
+<test name = "codecenter function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.codecenter.CodeCenter">
+ <methods>
+                    <include name="login" /> 
+                    <include name="codecenter" /> 
+                    <include name="createcategory" />                     
+                    <include name="createpageconversion" /> 
+                    <include name="createcategory1" /> 
+                    <include name="createpageconversion1" /> 
+                    
+                    
+                                        
+</methods>
+</class>
+</classes>
+</test>
+</suite>

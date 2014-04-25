@@ -1,0 +1,25 @@
+<suite name = "test" verbose = "2">
+
+<parameter name = "loginname" value = "xuchong@ipinyou.com"/>
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "browser" value = "chrome" />
+<parameter name = "name" value = "test337-280" />
+<parameter name = "symbol" value = "test代号" />
+<parameter name = "width" value = "336" />
+<parameter name = "height" value = "280" />
+<parameter name = "filrpath" value = "F:\script\336-280-o.ftl" />
+<parameter name = "picpath" value = "E:\360Downloads\12.jpg" />
+<parameter name = "minframe" value = "6" />
+ <parameter name = "maxframe" value = "6" />
+
+<test name = "dynamiccreative function" preserve-order="true">
+<classes>
+<class name="com.ipinyou.testcase.dsp.DynamicCreative">
+ <methods>
+                    <include name="login" />      
+                    <include name="dynamiccreative" />                        
+</methods>
+</class>
+</classes>
+</test>
+</suite>

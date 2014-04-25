@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Simple Reporter Suite">
+  <listeners>
+    <listener class-name="com.test.test1" />
+  </listeners>
+
+  <test name="Simple Reporter test">
+    <classes>
+      <class name="com.test.SampleTest" />
+    </classes>
+  </test>
+</suite>

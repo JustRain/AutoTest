@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "orname" value = "AutoOrder"/>
+<parameter name = "plname" value = "AutoPlan"/>
+<parameter name = "strategyname" value = "AutoStrategyDsp"/>
+<parameter name = "statisticstrategy" value = "statisticstrategy" />
+<parameter name = "statisticremark" value = "statisticstrategy remark" />
+<parameter name = "statisticprice" value = "10.00" />
+<parameter name = "statisticcreativetheme" value = "statisticcreativetheme" />
+<parameter name = "staheight" value = "1" />
+<parameter name = "stawidth" value = "1" />
+<parameter name = "staclickurl" value = "http://www.baidu.com/" />
+<parameter name = "staexposeurl" value = "http://www.hao123.com/" />
+<parameter name = "browser" value = "chrome" />
+
+
+<test name="StatisticsStrateg function"  preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.dsp.StatisticsStrategy">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name = "createstatistic"/>
+      <include name = ""/>
+      </methods>
+      </class>
+    </classes>
+  </test> 
+
+</suite>

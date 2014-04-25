@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "orname" value = "AutoOrder"/>
+<parameter name = "plname" value = "AutoPlan"/>
+<parameter name = "delstrtegy" value = "DelAutoStrategyDsp"/>
+<parameter name = "delpath" value = "E:\360Downloads\delcreative.jpg" />
+<parameter name = "delcreativetheme" value = "delcreativetheme" />
+<parameter name = "delurl" value = "http://www.del.com" />
+
+<parameter name = "browser" value = "chrome" />
+
+  <test name="Test"  preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.dsp.del.DelStrategy">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name = "instrategy"/>
+      <include name = "createStr"/>
+      <include name = "uploadcreative"/>
+      <include name = "delcreative"/>
+      <include name = "credatacheck" />
+     <include name = "delstr"/>
+     <include name = "strdatacheck"/>
+      
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

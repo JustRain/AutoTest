@@ -1,0 +1,22 @@
+<suite name="ipinyou1" verbose="2">
+<parameter name = "loginname" value = "autotest@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "ordername" value = "autoorder"/>
+<parameter name = "totalbudget" value = "100"/>
+<parameter name = "contractNo" value = "NO001"/>
+
+
+
+
+<test name = "order function" preserve-order="true">
+<classes>
+<class name = "com.ipinyou.testcase.advertiserdsp.Order">
+<methods>
+                    <include name="login" />     
+                  
+                    <include name ="createorder"/>
+</methods>
+</class>
+</classes>
+</test>
+</suite>

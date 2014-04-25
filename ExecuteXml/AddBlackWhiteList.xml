@@ -1,0 +1,27 @@
+<suite name = "test" verbose = "2">
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "blackname" value = "autoblack" />
+<parameter name = "blackvalue" value = "http://www.black.com" />
+<parameter name = "whitename" value = "autowhite" />
+<parameter name = "whitevalue" value = "http://www.white.com" />
+<parameter name = "agentname" value = "北京品友互动信息技术有限公司" />
+<parameter name = "advertisername" value = "autoadvertiser" />
+<parameter name = "browser" value = "chrome" />
+  
+  <test name="AddBlackWhiteList function" preserve-order="true">  
+        <classes>
+            <class name="com.ipinyou.testcase.dsp.AddBlackWhiteList">
+                <methods>
+                    <include name = "login" />
+                    <include name = "switchlist" />
+                     <include name = "createblacklist" />
+                     <include name = "createwhitelist" />
+                </methods>
+            </class>  
+        </classes>
+    </test>
+  
+  
+
+</suite>

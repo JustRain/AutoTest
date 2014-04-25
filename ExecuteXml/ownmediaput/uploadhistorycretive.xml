@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+
+<parameter name = "loginname" value = "xuchong@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "autoadvertiser"/>
+<parameter name = "orname" value = "AutoOrder"/>
+<parameter name = "plname" value = "AutoPlan"/>
+<parameter name = "searchname" value = "ownmediacreative"/>
+<parameter name = "strategyname" value = "AutoStrategyOmediaPut"/>
+<parameter name = "arriveadress" value = "http://www.baidu.com"/>
+<parameter name = "text1" value = "奢侈品" />
+<parameter name = "text2" value = "奢侈品" />
+<parameter name = "browser" value = "firefox" />
+
+
+  <test name="uploadhistorycreative" preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.ownmedia.UploadHisttoryCreative">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name ="increative"/>
+      <include name ="selecthistorycreative"/>
+      <include name ="choosecreative"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

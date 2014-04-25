@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="2" name="Failed suite [ipinyou]">
+  <parameter name="loginname" value="medium@ipinyou.com"/>
+  <parameter name="contactname" value="test联系人"/>
+  <parameter name="email" value="test@ipinyou.com"/>
+  <parameter name="registername" value="testCompany"/>
+  <parameter name="advertiserwebsite" value="http://www.test.com"/>
+  <parameter name="cellphone" value="13800138000"/>
+  <parameter name="servicefeerate" value="10%"/>
+  <parameter name="path" value="E:\\Eclipse workspace\\{CB4F4C01-3548-4480-9BD6-F94DEF82F568}.jpg"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="password" value="aaaaaa"/>
+  <parameter name="adname" value="mediumautoadvertiser"/>
+  <parameter name="industrytext" value="交通类"/>
+  <test name="advertiser function(failed)">
+    <classes>
+      <class name="com.ipinyou.testcase.dsp.Advertiser">
+        <methods>
+          <include name="createad"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.ipinyou.testcase.dsp.Advertiser -->
+    </classes>
+  </test> <!-- advertiser function(failed) -->
+</suite> <!-- Failed suite [ipinyou] -->

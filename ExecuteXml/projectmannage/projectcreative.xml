@@ -1,0 +1,48 @@
+<suite name="Suite" parallel="false">
+<parameter name = "browser1" value = "chrome" />
+
+<parameter name = "loginname" value = "autoproject@ipinyou.com" />
+<parameter name = "password" value = "aaaaaa"/>
+<parameter name = "adname" value = "projectautoadvertiser"/>
+<parameter name = "orname" value = "ProjectAutoOrder"/>
+<parameter name = "plname" value = "ProjectAutoPlan"/>
+<parameter name = "strategyname" value = "ProjectAutoStrategyDsp"/>
+<parameter name = "arriveadress" value = "http://www.baidu.com"/>
+<parameter name = "monitoraddress" value = "http://www.monitor.com"/>
+<parameter name = "exposureaddress" value = "http://www.exposure.com"/>
+<!-- <parameter name = "theme" value = "ProjectUploadCreative" /> -->
+<!-- <parameter name = "dsppath" value="E:\360Downloads\project\project.jpg" /> -->
+
+<parameter name = "jpgtheme" value = "ProjectUploadCreative" />
+<parameter name = "giftheme" value = "Uploadgif" />
+<parameter name = "pngtheme" value = "Uploadpng" />
+<parameter name = "flvtheme" value = "Uploadflv" />
+<parameter name = "swftheme" value = "Uploadswf" />
+<parameter name = "dspjpgpath" value="E:\360Downloads\project\project.jpg" />
+<parameter name = "dspgifpath" value="E:\360Downloads\classify\Uploadgif.gif" />
+<parameter name = "dsppngpath" value="E:\360Downloads\classify\Uploadpng.png" />
+<parameter name = "dspflvpath" value="E:\360Downloads\classify\Uploadflv.flv" />
+<parameter name = "dspswfpath" value="E:\360Downloads\classify\Uploadswf.swf" />
+<parameter name = "dspjpegpath" value="E:\360Downloads\classify\Uploadswf.swf" />
+<parameter name = "reminder" value = "本次上传创意，成功1，失败0" />
+
+<parameter name = "browser" value = "chrome" />
+  <test name="strategy" preserve-order="true">
+    <classes>
+      <class name="com.ipinyou.testcase.dsp.Creative">
+      <methods>
+      <include name = "login"/>
+      <include name ="search"/>
+      <include name ="increative"/>
+      <include name ="selcreative"/>
+      <include name = "slecomcreativejpg"/>
+      <include name = "slecomcreativeflv"/>
+      <include name = "selcomcreativeswf"/>
+      <include name = "selcomcreativepng"/>
+      <include name = "selcomcreativegif"/>
+      <include name = "completecreative"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
